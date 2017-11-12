@@ -1,0 +1,32 @@
+{
+  "name": "yasel_template",
+  "version": "0.1.1",
+  "private": true,
+  "description": "project_template for web",
+  "author": "RamanYasel",
+  "devDependencies": {
+    "browser-sync": "2.18.8",
+    "css-mqpacker": "^5.0.1",
+    "gulp": "3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-clean-css": "3.0.4",
+    "gulp-csscomb": "3.0.8",
+    "gulp-csso": "^3.0.0",
+    "gulp-image": "2.7.6",
+    "gulp-minify": "0.0.15",
+    "gulp-plumber": "1.1.0",
+    "gulp-postcss": "6.4.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sass": "3.1.0",
+    "npm-check-updates": "^2.10.4"
+  },
+  "scripts": {
+    "build": "gulp build",
+    "start": "gulp serve"
+  },
+  "engines": {
+    "node": "^6.9.4"
+  }
+}

@@ -1,0 +1,92 @@
+// base style
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+html {
+	min-height: 100%;
+	font-size: 8px;
+
+	@media (min-width: $tablet) {
+		font-size: 9px;
+	}
+	@media (min-width: $desktop) {
+		font-size: 10px;
+	}
+}
+
+body {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	max-width: 100%;
+	min-height: 100%;
+	font: normal 1.6rem $font_1;
+	color: $color_body;
+	overflow-x: hidden;
+	-webkit-text-size-adjust: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+dd, dl, dt {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: $color_link;
+	transition: all 0.5s ease;
+
+	&:hover,
+	&:active,
+	&:focus {
+		color: $color_link_hover;
+	}
+}
+
+.page-wrapper {
+	position: relative;
+	min-height: 100%;
+	height: auto !important;
+	overflow: hidden;
+}
+
+.container {
+	@include container;
+}
+
+.main {
+	min-height: calc(100vh - 50px);
+}
+
+// back to top
+.back-top {
+	position: fixed;
+	bottom: 3rem;
+	right: 3rem;
+	z-index: 1000;
+
+	a {
+		display: block;
+		width: 5rem;
+		height: 5rem;
+		background: url("../img/icons/top.svg") center no-repeat;
+		background-size: contain;
+		text-align: center;
+		text-decoration: none;
+		transition: all 0.5s ease;
+
+		&:hover,
+		&:active {
+			outline: none;
+			cursor: pointer;
+			transform: scale(1.1);
+		}
+	}
+}
