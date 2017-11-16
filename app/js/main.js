@@ -1,96 +1,97 @@
-$(document).ready(function($) {
-	// - developer funcitons
-	pageWidget(['index', 'news', 'contact']);
-	getAllClasses('html', '.elements_list');
+$(document).ready(function(){
 
-	// - mobile menu
-	$body = $("body");
-	$menuTrigger = $("#menu__trigger");
-
-	$menuTrigger.on("click", function () {
-		if ($body.hasClass("menu__open")) {
-			$body.removeClass("menu__open");
-			$(this).removeClass("active__mod");
-		} else {
-			$body.addClass("menu__open");
-			$(this).addClass("active__mod");
-		}
+	$(".slider").slick({
+		mobileFirst: true
 	});
 
-	// - back to top
-	$("#back-top").hide();
+	var mobileTopOffset = 54;
+	var desktopTopOffset = 80;
+	var topOffset = desktopTopOffset;
 
-	$(window).scroll(function() {
-		if ($(this).scrollTop() > 300) {
-			$("#back-top").fadeIn();
-		} else {
-			$("#back-top").fadeOut();
-		}
-	});
-
-	$("#back-top").click(function() {
-		$("body,html").animate({
-			scrollTop: 0
-		}, 500);
-		return false;
-	});
-
-	// - smooth scroll
-	$(".header__menu-list").on("click", "a", function(event) {
-		event.preventDefault();
-
-		var el = $(this).attr("href");
-		$("body,html").animate({
-			scrollTop: $(el).offset().top
-		}, 2000);
-		return false;
-	});
-
-	// - call button
-	$("#call").click(function() {
-		$("#modal_window").addClass("modal--show");
-		$(".modal-bg").css("display", "block");
-	});
-
-	$(".modal__close, .modal-bg").click(function() {
-		$("#modal_window").removeClass("modal--show");
-		$(".modal-bg").css("display", "none");
-	});
-
-	// easy form validate
-	function validateForm(dir) {
-		var form = dir;
-		var name, phone;
-		var error = [];
-		// var checking;
-		form.find("#modal_form").html("");
-		name = form.find("#name").val();
-		phone = form.find("#phone").val();
-		if (name === "") {
-			error.push("Введите имя*");
-		} else
-		if (!/[А-Яа-яЁёa-zA-Z`\s]{1,100}/.test(name)) {
-			error.push("*Мы ждём от Вас корректного имени");
-		}
-		if (phone === "") {
-			error.push("Введите телефон*");
-		} else
-		if (!/[0-9()-\s+]{3,20}/.test(phone)) {
-			error.push("*Введите корректный телефон");
-		}
-		if (error.length > 0) {
-			$.each(error, function() {
-				form.find(".errortext").append(this + "<br>");
-			});
-			return false;
-		}
-		return true;
+	if($(window).width() <= 900) {
+		topOffset = mobileTopOffset;
 	}
 
-	$(".order-btn").on("submit", function(e) {
-		var valid = validateForm($(this));
-		if (!valid) {
-			return false;
+	/* Single page nav
+	 -----------------------------------------*/
+	$('#tmNavbar').singlePageNav({
+		'currentClass' : "active",
+		offset : topOffset,
+		'filter': ':not(.external)'
+	});
+
+	/* Handle nav offset upon window resize
+	 -----------------------------------------*/
+	$(window).resize(function(){
+		if($(window).width() <= 900) {
+			topOffset = mobileTopOffset;
 		}
+		else {
+			topOffset = desktopTopOffset;
+		}
+
+		$('#tmNavbar').singlePageNav({
+			'currentClass' : "active",
+			offset : topOffset,
+			'filter': ':not(.external)'
+		});
+	});
+
+
+	/* Collapse menu after click
+	 -----------------------------------------*/
+	$('#tmNavbar a').click(function(){
+		$('#tmNavbar').collapse('hide');
+	});
+
+	/* Turn navbar background to solid color starting at section 2
+	 ---------------------------------------------------------------*/
+	var target = $("#bike-section-2").offset().top - topOffset;
+
+	if($(window).scrollTop() >= target) {
+		$(".bike-navbar-container").addClass("bg-inverse");
+	}
+	else {
+		$(".bike-navbar-container").removeClass("bg-inverse");
+	}
+
+	$(window).scroll(function(){
+
+		if($(this).scrollTop() >= target) {
+			$(".bike-navbar-container").addClass("bg-inverse");
+		}
+		else {
+			$(".bike-navbar-container").removeClass("bg-inverse");
+		}
+	});
+
+
+	/* Smooth Scrolling
+	 * https://css-tricks.com/snippets/jquery/smooth-scrolling/
+	 --------------------------------------------------------------*/
+	$('a[href*="#"]:not([href="#"])').click(function() {
+		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+			&& location.hostname == this.hostname) {
+
+			var target = $(this.hash);
+			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+
+			if (target.length) {
+
+				$('html, body').animate({
+					scrollTop: target.offset().top - topOffset
+				}, 1000);
+				return false;
+			}
+		}
+	});
+
+
+	/* Magnific pop up
+	 ------------------------- */
+	$('.bike-img-grid').magnificPopup({
+		delegate: 'a', // child items selector, by clicking on it popup will open
+		type: 'image',
+		gallery: {enabled:true}
 	});
 });

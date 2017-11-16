@@ -6,9 +6,10 @@
 
 // blocks
 @import "blocks/header";
-@import "blocks/logo";
-@import "blocks/menu";
-@import "blocks/button";
-@import "blocks/form";
-@import "blocks/footer";
-@import "blocks/modal";
+
+@import "common";
+@import "common-media";
+
+//vendors
+@import "slick";
+@import "slick-theme";
