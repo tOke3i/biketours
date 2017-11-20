@@ -1,9 +1,7 @@
 "use strict";
-
 var gulp = require("gulp");
 var sass = require("gulp-sass");
 var server = require("browser-sync");
-
 var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
@@ -13,7 +11,6 @@ var html = require("gulp-rigger");
 var rename = require("gulp-rename");
 var clean = require("gulp-clean");
 var csso = require("gulp-csso");
-// var cleanCSS = require("gulp-clean-css");
 var image = require("gulp-image");
 var minify = require("gulp-minify");
 
@@ -31,6 +28,7 @@ gulp.task("style", function() {
 			})
 		]))
 		.pipe(csscomb())
+		.pipe(sass().on('error', sass.logError))
 		.pipe(gulp.dest("app/css"))
 		.pipe(server.reload({
 			stream: true

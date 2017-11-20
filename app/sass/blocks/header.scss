@@ -1,5 +1,4 @@
 .bike-navbar-container {
-  background-color: $black_33;
   height: 80px;
   position: fixed;
   top: 0;
@@ -9,10 +8,6 @@
   &.bg-inverse {
     background-color: $color_tuna_approx;
   }
-}
-.bike-navbar-container-dark {
-  background-color: $color_tuna_approx;
-  box-shadow: none;
 }
 .navbar-toggler {
   border: 1px solid $white;

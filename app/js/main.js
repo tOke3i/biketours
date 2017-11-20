@@ -1,7 +1,11 @@
 $(document).ready(function(){
 
 	$(".slider").slick({
-		mobileFirst: true
+		nextArrow: '<i class="fa fa-arrow-right"></i>',
+		prevArrow: '<i class="fa fa-arrow-left"></i>',
+		mobileFirst: true,
+		controls:true,
+		adaptiveHeight: true
 	});
 
 	var mobileTopOffset = 54;
