@@ -16,12 +16,21 @@
 }
 .header-logo-container{
   position: relative;
-  top:20px;
+  top:0px;
   left:0;
   right:0;
   margin: 0 auto;
   display: inline-block;
-  max-width:150px;
+
   width:100%;
   min-height:200px;
+  img{
+    max-width:100px;
+    position: absolute;
+    top:20px;
+    left:0;
+    right:0;
+    margin: auto;
+    z-index:9999;
+  }
 }

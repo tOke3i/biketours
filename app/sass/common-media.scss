@@ -140,6 +140,11 @@
     min-height: 600px;
   }
 }
+@media(max-width: 440px){
+  .bike-gallery-img-container {
+    width: 100% !important;
+  }
+}
 @media(max-width: 1800px) {
   .bike-intro {
     background-size: 1800px 750px;

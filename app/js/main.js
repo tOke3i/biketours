@@ -99,3 +99,15 @@ $(document).ready(function(){
 		gallery: {enabled:true}
 	});
 });
+
+$(window).scroll(function() {
+	if ($(this).scrollTop() > 200) { //use `this`, not `document`
+		$('.header-logo-container').css({
+			'display': 'none'
+		});
+	}else if($(this).scrollTop < 200){
+		$('.header-logo-container').css({
+			'display': 'block'
+		});
+	}
+});
