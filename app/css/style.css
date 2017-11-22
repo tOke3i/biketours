@@ -111,7 +111,7 @@ html {
   display: none; }
 
 a:hover, a:focus {
-  color: #4ea7ff;
+  color: #fdba47;
   text-decoration: none;
   outline: none; }
 
@@ -207,7 +207,7 @@ h3 {
   color: #006699; }
 
 .light-blue-text {
-  color: #4ea7ff; }
+  color: #fdba47; }
 
 .btn {
   border-radius: 50px;
@@ -248,15 +248,15 @@ h3 {
 
 .bike-light-blue-bordered-btn {
   background: transparent;
-  border: 2px solid #4ea7ff;
-  color: #4ea7ff; }
+  border: 2px solid #fdba47;
+  color: #fdba47; }
 
 .bike-light-blue-bordered-btn:hover {
-  background: #4ea7ff;
+  background: #fdba47;
   color: white; }
 
 .bike-light-blue-bordered-btn:focus {
-  background: #4ea7ff;
+  background: #fdba47;
   color: white; }
 
 .bike-blue-btn {
@@ -470,13 +470,13 @@ h3 {
   font-size: 1.8rem; }
 
 .navbar-nav .nav-link:focus {
-  color: #1f1e1e; }
+  color: #c89134; }
 
 .navbar-nav .nav-link.active {
-  color: #1f1e1e; }
+  color: #c89134; }
 
 .navbar-nav .nav-link:hover {
-  color: #1f1e1e; }
+  color: #c89134; }
 
 .page-2 .container-fluid {
   max-width: 1140px; }
@@ -3063,8 +3063,7 @@ h3 {
     flex-direction: column; }
   .bike-news-container {
     padding: 1.5em;
-    margin: 0 auto;
-    max-width: 600px; }
+    margin: 0 auto; }
   .flex-order-2 {
     -ms-flex-order: 1;
     order: 1; }
