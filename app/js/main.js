@@ -16,13 +16,29 @@ $(document).ready(function(){
 		topOffset = mobileTopOffset;
 	}
 
-	/* Single page nav
-	 -----------------------------------------*/
-	$('#tmNavbar').singlePageNav({
-		'currentClass' : "active",
-		offset : topOffset,
-		'filter': ':not(.external)'
+	$(".mobile_nav").click(function() {
+
+		var mm = $(".mobile_menu"),
+			mn = $(".mobile_nav"),
+			a = "active";
+
+		if (mm.hasClass(a) && mn.hasClass(a)) {
+			mm.removeClass(a).fadeOut(200);
+			mn.removeClass(a);
+			$('.mobile_menu li').each(function(){
+				$(this).removeClass('slide');
+			});
+		} else {
+			mm.addClass(a).fadeIn(200);
+			mn.addClass(a);
+			$('.mobile_menu li').each(function(i){
+				var t = $(this);
+				setTimeout(function(){ t.addClass('slide'); }, (i+1) * 100);
+			});
+		}
+
 	});
+
 
 	/* Handle nav offset upon window resize
 	 -----------------------------------------*/
