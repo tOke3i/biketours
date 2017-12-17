@@ -21,7 +21,7 @@ gulp.task("style", function() {
 		.pipe(sass())
 		.pipe(postcss([
 			autoprefixer({
-				browsers: ["last 4 versions"]
+				browsers: ["last 6 versions"]
 			}),
 			mqpacker({
 				sort: true
@@ -49,7 +49,7 @@ gulp.task("html", function() {
 gulp.task("serve", ["style", "html"], function() {
 	server.init({
 		server: "./app",
-		notify: false,
+		notify: true,
 		open: true,
 		ui: false
 	});
