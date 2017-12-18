@@ -31,7 +31,7 @@ hr {
 a {
   text-decoration: none;
   outline: none;
-  color: #95e1d3;
+  color: rgba(254, 167, 0, 0.9);
   transition: all .3s ease-in-out; }
 
 a:hover {
@@ -220,7 +220,7 @@ img.img-full-width {
 
 .logo-wrap img {
   margin: auto;
-  top: 0;
+  top: -36px;
   margin-left: 20px;
   position: absolute;
   max-height: 150px; }
@@ -286,7 +286,7 @@ img.img-full-width {
 #nino-slider .carousel-indicators li .inner {
   border-bottom: 2px solid #f7eac4;
   position: relative;
-  color: #faf3e0;
+  color: #bd7f08;
   text-transform: uppercase;
   margin: 0 12px;
   padding: 10px 0;
@@ -344,7 +344,11 @@ img.img-full-width {
   background: none; }
 
 #nino-navbar .nino-menuItem {
-  float: right; }
+  float: right;
+  padding-left: 90px; }
+
+#nino-navbar .header-wrap {
+  max-width: 900px; }
 
 #nino-navbar .nino-iconsGroup li a {
   border: none;
@@ -427,7 +431,7 @@ section {
   bottom: 0;
   width: 50px;
   height: 2px;
-  background: #f38181;
+  background: rgba(254, 167, 0, 0.9);
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%); }
@@ -455,7 +459,7 @@ section {
 
 #nino-counting {
   padding: 0;
-  background: #95e1d3;
+  background: rgba(254, 167, 0, 0.9);
   font-family: "Montserrat", sans-serif;
   text-align: center;
   color: #ffffff;
@@ -537,7 +541,7 @@ section {
   left: 10px;
   top: 13px;
   font-size: 30px;
-  color: #95e1d3; }
+  color: rgba(254, 167, 0, 0.9); }
 
 #nino-whatWeDo .panel-title .nino-icon.arrow {
   left: auto;
@@ -555,7 +559,7 @@ section {
   font-weight: 300; }
 
 #nino-whatWeDo .mCS-default .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar, #nino-whatWeDo .mCS-default .mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar, #nino-whatWeDo .mCS-default .mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar {
-  background: #95e1d3; }
+  background: rgba(254, 167, 0, 0.9); }
 
 #nino-whatWeDo .mCSB_scrollTools .mCSB_draggerRail {
   background: #f5f5f5; }
@@ -584,11 +588,11 @@ section {
 
 .nino-testimonialSlider .nino-symbol .nino-icon {
   padding: 16px;
-  border: 2px solid #95e1d3;
+  border: 2px solid rgba(254, 167, 0, 0.9);
   font-size: 65px;
-  color: #95e1d3; }
+  color: rgba(254, 167, 0, 0.9); }
 
-.nino-testimonialSlider .quote {
+.nino-testimonialSlider .tour-discription {
   font-size: 18px;
   font-weight: 300;
   font-style: italic;
@@ -607,7 +611,7 @@ section {
   top: 50%;
   width: 40px;
   height: 2px;
-  background: #f38181;
+  background: rgba(254, 167, 0, 0.9);
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%); }
@@ -654,8 +658,7 @@ section {
   width: 100%;
   height: 100%;
   text-align: center;
-  background: rgba(243, 129, 129, 0.9);
-  background: linear-gradient(to bottom, rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)); }
+  background: rgba(0, 0, 0, 0.5); }
 
 #nino-portfolio .nino-portfolioItems li .content {
   position: absolute;
@@ -689,7 +692,7 @@ section {
 
 #nino-ourTeam .content .nino-icon:hover {
   color: #ffffff;
-  background: #f38181; }
+  background: rgba(254, 167, 0, 0.9); }
 
 #nino-ourTeam .info {
   margin-top: 35px;
@@ -729,7 +732,7 @@ section {
   bottom: 0;
   width: 50px;
   height: 2px;
-  background: #f38181; }
+  background: rgba(254, 167, 0, 0.9); }
 
 #nino-latestBlog article .articleThumb {
   position: relative;
@@ -737,7 +740,7 @@ section {
 
 #nino-latestBlog article .date {
   position: absolute;
-  background: #95e1d3;
+  background: rgba(254, 167, 0, 0.9);
   left: -10px;
   bottom: 10px;
   padding: 10px 15px;
@@ -775,7 +778,7 @@ section {
   color: #000000; }
 
 #nino-latestBlog article .articleMeta .nino-icon {
-  color: #95e1d3;
+  color: rgba(254, 167, 0, 0.9);
   font-size: 17px;
   position: relative;
   top: 2px; }
@@ -785,7 +788,7 @@ section {
   background: url(../images/map/bg-map.jpg) no-repeat center center/cover; }
 
 #nino-map .nino-sectionHeading {
-  color: #f28989;
+  color: rgba(254, 167, 0, 0.9);
   margin: 0;
   cursor: pointer; }
 
@@ -816,6 +819,15 @@ section {
 footer {
   padding-top: 50px;
   background: #f8f8f8; }
+
+footer .nino-subHeading {
+  font-weight: 400;
+  font-family: "Kaushan Script", cursive;
+  font-size: 40px;
+  color: rgba(254, 167, 0, 0.9); }
+
+footer .footer-logo {
+  max-height: 80px; }
 
 footer .nino-colHeading {
   margin: 0 0 25px;
@@ -858,7 +870,7 @@ footer .nino-followUs .socialNetwork .nino-icon {
   display: inline-block;
   margin: 0 3px;
   font-size: 18px;
-  color: #95e1d3; }
+  color: rgba(254, 167, 0, 0.9); }
 
 footer .nino-subscribeForm .input-group input, footer .nino-subscribeForm .input-group .btn {
   border-radius: 0; }
@@ -874,7 +886,7 @@ footer .nino-subscribeForm .input-group .btn {
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
-  background: #95e1d3;
+  background: rgba(254, 167, 0, 0.9);
   border: none; }
 
 footer .listArticles > li {
@@ -965,7 +977,7 @@ footer .nino-copyright {
   display: none;
   cursor: pointer;
   z-index: 2;
-  background: #e74c3c url(../images/go-to-top.png) center center no-repeat; }
+  background: rgba(254, 167, 0, 0.9) url(../images/go-to-top.png) center center no-repeat; }
 
 #nino-scrollToTop:hover {
   text-decoration: none;
@@ -1027,6 +1039,10 @@ div.pp_default .pp_social {
   left: auto;
   right: 20px; }
 
+@media (min-width: 767px) {
+  .navbar-header {
+    float: right !important; } }
+
 @media (max-width: 1200px) {
   #nino-whatWeDo .panel-body {
     height: 118px; }
@@ -1040,7 +1056,7 @@ div.pp_default .pp_social {
     padding: 45px 0; }
   .nino-testimonial {
     padding: 30px 0; }
-  .nino-testimonialSlider .quote {
+  .nino-testimonialSlider .tour-discription {
     font-size: 13px; }
   .nino-testimonialSlider .nino-avatar {
     width: 130px; }
@@ -1109,7 +1125,8 @@ div.pp_default .pp_social {
   #nino-navbar {
     background: rgba(254, 167, 0, 0.9); }
   #nino-navbar .navbar-header {
-    padding-right: 80px; }
+    float: right !important;
+    padding-right: 30px; }
   #nino-navbar .navbar-nav > li > a {
     padding: 10px 5px 5px; }
   #nino-navbar .navbar-nav > li > a:hover {
@@ -1127,14 +1144,16 @@ div.pp_default .pp_social {
     position: absolute;
     z-index: 1;
     left: 0; }
-  #nino-navbar .nino-iconsGroup {
+  #nino-navbar .languages-wrap {
     position: absolute;
     right: 15px;
     top: 0;
-    margin: 0; }
-  #nino-navbar .nino-iconsGroup > li {
+    margin: 0;
+    float: right;
+    padding-right: 80px; }
+  #nino-navbar .languages-wrap > li {
     display: inline-block; }
-  #nino-navbar .nino-iconsGroup li a {
+  #nino-navbar .languages-wrap li a {
     margin: 0 0 0 15px;
     padding: 15px 0 5px; }
   #nino-services .item:not(:nth-last-child(-n+1)) {
@@ -1174,7 +1193,7 @@ div.pp_default .pp_social {
   .nino-testimonialSlider .nino-symbol {
     font-size: 45px;
     margin: 0 15px 0 5px; }
-  .nino-testimonialSlider .quote {
+  .nino-testimonialSlider .tour-discription {
     font-size: 11px; }
   .nino-testimonialSlider .name {
     font-size: 13px; }
@@ -1203,7 +1222,7 @@ div.pp_default .pp_social {
   #nino-slider .carousel-indicators .inner:after {
     display: none; }
   #nino-slider .carousel-indicators li.active .inner {
-    border-color: #f38181; }
+    border-color: rgba(254, 167, 0, 0.9); }
   .nino-testimonialSlider .nino-symbol, .nino-testimonialSlider .nino-avatar {
     display: none; }
   #nino-portfolio .nino-portfolioItems li {
