@@ -1092,7 +1092,7 @@ input {
 	display: none;
 	cursor: pointer;
 	z-index: 2;
-	background: rgba(254, 167, 0, 0.9) url(../images/go-to-top.png) center center no-repeat;
+	background: rgba(254, 167, 0, 0.9) url(../img/go-to-top.png) center center no-repeat;
 &:hover {
 	 text-decoration: none;
 	 background-color: #F75C4C;
@@ -1283,7 +1283,7 @@ article {
 	top: 0;
 	margin: 0;
     float: right;
-  padding-right: 80px;
+    padding-right: 80px;
 > li {
 	display: inline-block;
 }
@@ -1301,6 +1301,9 @@ li a {
 }
 
 @media (max-width: 640px) {
+  .languages-wrap {
+    position: absolute;
+  }
 	section {
 		padding: 30px 0;
 	}
@@ -1383,6 +1386,17 @@ footer {
 }
 
 @media (max-width: 480px) {
+    .languages-wrap {
+      top: auto !important;
+      position: absolute !important;
+      bottom: 0 !important;
+      padding-right: 0 !important;
+    }
+  .logo-wrap img{
+    margin-left: 0;
+    left: 0!important;
+    width: 80px;
+  }
 	#nino-slider .carousel-indicators {
 	li .inner {
 		text-indent: -99999em;
@@ -1404,4 +1418,14 @@ footer {
 #nino-portfolio .nino-portfolioItems li {
 	width: 100%;
 }
+}
+.tours-all-page{
+  img{
+    margin: 0px 10px 40px;
+    max-width: 500px;
+    min-width: 290px;
+  }
+}
+.tour-card{
+  padding: 10px 30px !important;
 }
