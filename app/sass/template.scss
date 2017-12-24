@@ -400,6 +400,9 @@ li {
 		color: #fff;
 		display: inline-block;
 		margin:0 15px;
+      @media(max-width:440px){
+        margin-left: 5px;
+      }
 	}
 }
 #bike-navbar {
@@ -436,7 +439,7 @@ li > a {
  }
 }
 }
-  #booktour{
+  .booktour{
     width:100%;
     max-width: 700px;
   }
@@ -1110,7 +1113,7 @@ input {
     margin-top: 20px;
 }
 }
-iframe#booktour {
+iframe.booktour {
   position: relative;
   top: -20px;
 }
@@ -1367,14 +1370,27 @@ article {
 	margin: 0;
     float: right;
     padding-right: 80px;
+  @media (max-width:440px){
+    padding-right: 40px!important;
+  }
 
 > li {
 	display: inline-block;
+    text-align: center;
+  @media (max-width:680px){
+    padding-left:7px!important;
+  }
+  @media (max-width:440px){
+    padding-left:0px!important;
+  }
 
 }
 li a {
 	margin: 0 0 0 15px;
 	padding: 15px 0 5px;
+  @media (max-width:680px){
+    padding: 7px 0 5px !important;
+  }
 
 }
 }
@@ -1522,4 +1538,14 @@ footer {
 }
 .tour-name{
 	font-weight: 500;
+}
+@media (min-width: 768px){
+.container.header-wrap {
+  width: 100%;
+}
+ }
+.simple-page{
+  img{
+    margin: 10px;
+  }
 }

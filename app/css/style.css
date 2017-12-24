@@ -380,7 +380,7 @@ img.img-full-width {
   border-color: #fce38a;
   background: none; }
 
-#bike-navbar #booktour {
+#bike-navbar .booktour {
   width: 100%;
   max-width: 700px; }
 
@@ -992,7 +992,7 @@ footer .bike-copyright {
   padding: 20px 0;
   margin-top: 20px; }
 
-iframe#booktour {
+iframe.booktour {
   position: relative;
   top: -20px; }
 
@@ -1080,6 +1080,9 @@ div.pp_default .pp_social {
 .tour-name {
   font-weight: 500; }
 
+.simple-page img {
+  margin: 10px; }
+
 .unslider {
   overflow: auto;
   margin: 0;
@@ -1131,10 +1134,9 @@ div.pp_default .pp_social {
   .navbar-header {
     float: right !important; } }
 
-@media (max-width: 540px) {
-  .bike-hoverEffect .item .overlay {
-    left: 0 !important;
-    top: 0 !important; } }
+@media (min-width: 768px) {
+  .container.header-wrap {
+    width: 100%; } }
 
 @media (max-width: 768px) {
   #bike-portfolio .bike-portfolioItems li .overlay {
@@ -1217,45 +1219,26 @@ div.pp_default .pp_social {
   #bike-latestBlog article .date .text {
     font-size: 11px; } }
 
-@media (max-width: 767px) {
-  #bike-navbar {
-    background: rgba(254, 167, 0, 0.9); }
-  #bike-navbar .navbar-header {
-    float: right !important;
-    padding-right: 30px; }
-  #bike-navbar .navbar-nav > li > a {
-    padding: 7px 5px 5px; }
-  #bike-navbar .navbar-nav > li > a:hover {
-    border-color: transparent; }
-  #bike-navbar .navbar-nav > .active > a {
-    border-color: transparent; }
-  #bike-navbar .navbar-nav > .active > a:hover {
-    border-color: transparent; }
-  #bike-navbar .bike-menuItem {
-    width: 100%; }
-  #bike-navbar .navbar-collapse {
-    width: 100%;
-    background: rgba(56, 56, 56, 0.95);
-    border-color: #464646;
-    position: absolute;
-    z-index: 1;
-    left: 0; }
+@media (max-width: 540px) {
+  .bike-hoverEffect .item .overlay {
+    left: 0 !important;
+    top: 0 !important; } }
+
+@media (max-width: 440px) {
+  .contants-header a {
+    margin-left: 5px; } }
+
+@media (max-width: 767px) and (max-width: 440px) {
   #bike-navbar .languages-wrap {
-    position: absolute;
-    right: 15px;
-    top: 0;
-    margin: 0;
-    float: right;
-    padding-right: 80px; }
+    padding-right: 40px !important; }
   #bike-navbar .languages-wrap > li {
-    display: inline-block; }
+    padding-left: 0 !important; } }
+
+@media (max-width: 767px) and (max-width: 680px) {
+  #bike-navbar .languages-wrap > li {
+    padding-left: 7px !important; }
   #bike-navbar .languages-wrap li a {
-    margin: 0 0 0 15px;
-    padding: 15px 0 5px; }
-  #bike-services .item:not(:nth-last-child(-n+1)) {
-    border-bottom: 1px solid #e5e5e5;
-    margin-bottom: 20px;
-    padding-bottom: 10px; } }
+    padding: 7px 0 5px !important; } }
 
 @media (max-width: 640px) {
   .languages-wrap {
@@ -1334,3 +1317,44 @@ div.pp_default .pp_social {
     display: none; }
   #bike-portfolio .bike-portfolioItems li {
     width: 100%; } }
+
+@media (max-width: 767px) {
+  #bike-navbar {
+    background: rgba(254, 167, 0, 0.9); }
+  #bike-navbar .navbar-header {
+    float: right !important;
+    padding-right: 30px; }
+  #bike-navbar .navbar-nav > li > a {
+    padding: 7px 5px 5px; }
+  #bike-navbar .navbar-nav > li > a:hover {
+    border-color: transparent; }
+  #bike-navbar .navbar-nav > .active > a {
+    border-color: transparent; }
+  #bike-navbar .navbar-nav > .active > a:hover {
+    border-color: transparent; }
+  #bike-navbar .bike-menuItem {
+    width: 100%; }
+  #bike-navbar .navbar-collapse {
+    width: 100%;
+    background: rgba(56, 56, 56, 0.95);
+    border-color: #464646;
+    position: absolute;
+    z-index: 1;
+    left: 0; }
+  #bike-navbar .languages-wrap {
+    position: absolute;
+    right: 15px;
+    top: 0;
+    margin: 0;
+    float: right;
+    padding-right: 80px; }
+  #bike-navbar .languages-wrap > li {
+    display: inline-block;
+    text-align: center; }
+  #bike-navbar .languages-wrap li a {
+    margin: 0 0 0 15px;
+    padding: 15px 0 5px; }
+  #bike-services .item:not(:nth-last-child(-n+1)) {
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 20px;
+    padding-bottom: 10px; } }
