@@ -120,7 +120,10 @@ li {
 	padding-left:20px;
 }
 }
-
+.item{
+  list-style: none;
+  padding:0;
+}
 img {
 	border: none;
 	max-width: 100%;
@@ -302,7 +305,7 @@ img {
 }
 #bike-headerInner {
 	position: relative;
-	z-index: 5;git staus
+	z-index: 5;
 }
 
 #bike-slider {
@@ -377,7 +380,7 @@ li {
 .trip-advisor{
 	display: inline-block;
 	margin:20px;
-	max-width:200px;
+	max-width:130px;
 	width:100%;
 
 	&:hover{
@@ -414,7 +417,7 @@ li > a {
 	font-weight: 500;
 	text-transform: uppercase;
 	border-bottom: 3px solid transparent;
-	padding: 12px 5px 5px;
+	padding: 7px 5px 5px;
 	margin: 0 5px;
 &:hover {
 	 color: #fce38a;
@@ -433,13 +436,14 @@ li > a {
  }
 }
 }
+  #booktour{
+    width:100%;
+    max-width: 700px;
+  }
 .bike-menuItem {
 	float: right;
   padding-left: 90px;
 }
-  .header-wrap{
-    max-width: 900px;
-  }
 .bike-iconsGroup li a {
 	border: none;
 	font-size: 18px;
@@ -1103,9 +1107,13 @@ input {
 	text-align: center;
 	border-top: 1px solid  rgba(254, 167, 0, 0.9);;
 	padding: 20px 0;
+    margin-top: 20px;
 }
 }
-
+iframe#booktour {
+  position: relative;
+  top: -20px;
+}
 #bike-searchForm {
 	position: fixed;
 	left: 0;
@@ -1329,7 +1337,7 @@ article {
 	}
 	.navbar-nav > {
 	li > a {
-		padding: 10px 5px 5px;
+		padding: 7px 5px 5px;
 &:hover {
 	 border-color: transparent;
  }
@@ -1359,12 +1367,15 @@ article {
 	margin: 0;
     float: right;
     padding-right: 80px;
+
 > li {
 	display: inline-block;
+
 }
 li a {
 	margin: 0 0 0 15px;
 	padding: 15px 0 5px;
+
 }
 }
 }
@@ -1459,7 +1470,12 @@ footer {
 	padding-top: 30px;
 }
 }
-
+.languages-wrap{
+  img{
+    width: 20px;
+    height: 20px;
+  }
+}
 @media (max-width: 480px) {
     .languages-wrap {
       top: auto !important;

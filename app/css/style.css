@@ -98,6 +98,10 @@ ul li {
   list-style: disc;
   padding-left: 20px; }
 
+.item {
+  list-style: none;
+  padding: 0; }
+
 img {
   border: none;
   max-width: 100%; }
@@ -323,7 +327,7 @@ img.img-full-width {
 .trip-advisor {
   display: inline-block;
   margin: 20px;
-  max-width: 200px;
+  max-width: 130px;
   width: 100%;
   padding: 15px;
   border-radius: 10px;
@@ -358,7 +362,7 @@ img.img-full-width {
   font-weight: 500;
   text-transform: uppercase;
   border-bottom: 3px solid transparent;
-  padding: 12px 5px 5px;
+  padding: 7px 5px 5px;
   margin: 0 5px; }
 
 #bike-navbar .navbar-nav > li > a:hover {
@@ -376,12 +380,13 @@ img.img-full-width {
   border-color: #fce38a;
   background: none; }
 
+#bike-navbar #booktour {
+  width: 100%;
+  max-width: 700px; }
+
 #bike-navbar .bike-menuItem {
   float: right;
   padding-left: 90px; }
-
-#bike-navbar .header-wrap {
-  max-width: 900px; }
 
 #bike-navbar .bike-iconsGroup li a {
   border: none;
@@ -984,7 +989,12 @@ footer .morePhoto {
 footer .bike-copyright {
   text-align: center;
   border-top: 1px solid rgba(254, 167, 0, 0.9);
-  padding: 20px 0; }
+  padding: 20px 0;
+  margin-top: 20px; }
+
+iframe#booktour {
+  position: relative;
+  top: -20px; }
 
 #bike-searchForm {
   position: fixed;
@@ -1054,6 +1064,10 @@ div.pp_default .pp_description {
 
 div.pp_default .pp_social {
   width: 100%; }
+
+.languages-wrap img {
+  width: 20px;
+  height: 20px; }
 
 .tours-all-page img {
   margin: 0 10px 40px;
@@ -1210,7 +1224,7 @@ div.pp_default .pp_social {
     float: right !important;
     padding-right: 30px; }
   #bike-navbar .navbar-nav > li > a {
-    padding: 10px 5px 5px; }
+    padding: 7px 5px 5px; }
   #bike-navbar .navbar-nav > li > a:hover {
     border-color: transparent; }
   #bike-navbar .navbar-nav > .active > a {
