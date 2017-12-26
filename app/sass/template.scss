@@ -311,7 +311,6 @@ img {
 #bike-slider {
 	padding: 40px 0 0;
 .carousel-inner {
-	height: 240px;
 > .item {
 	text-align: center;
 	color: #fff;
@@ -409,6 +408,7 @@ li {
 	background: none;
 	border: none;
 	border-radius: 0;
+	background: rgba(51,51,51,0.8);
 .navbar-brand {
 	color: #fff;
 	font-weight: 700;
@@ -468,7 +468,7 @@ li > a {
 	top: 0;
 	left: 0;
 	width: 100%;
-	background:$main-bg;
+	background:rgba(51,51,51,0.9);
 	z-index: 2;
 	-webkit-animation-duration: .5s;
 	animation-duration: .5s;
@@ -516,8 +516,10 @@ section {
 }
 
 #bike-slider .bike-sectionHeading {
-	font-size: 70px;
+	font-size: 50px;
 	color: #fff;
+	background: rgba(16, 16, 16, 0.3);
+	padding: 27px 0;
 .bike-subHeading {
 	font-size: 55px;
 }
@@ -1294,7 +1296,6 @@ div {
 	#bike-slider {
 		padding-top: 10px;
 	.carousel-inner {
-		height: 270px;
 	}
 	.carousel-indicators {
 		margin-top: 30px;
@@ -1428,7 +1429,7 @@ li a {
 }
 }
 .carousel-inner {
-	height: 205px;
+	height: 400px;
 }
 .carousel-indicators li .number {
 	display: none;
@@ -1548,4 +1549,57 @@ footer {
   img{
     margin: 10px;
   }
+ }
+.slick-slide{
+	height: 500px !important;
+	text-align: center;
+	padding: 40px 0;
+}
+.carousel{
+	width: 100%;
+}
+.social-net{
+	padding: 0 !important;
+}
+.slide-1{
+	background: url(../img/slide1.jpg);
+	background-position: center center !important;
+}
+.slide-2{
+	background: url(../img/slide2.jpg);
+}
+.slide-3{
+	background: url(../img/slider/111.jpg);
+}
+.slide-4{
+		background: url(../img/slider/578935_original.jpg);
+	background-position: center center !important;
+}
+.slide-5{
+	background: url(../img/slide3.jpg);
+	background-position: center center !important;
+}
+
+#slider-header .item{
+	background-size: cover;
+	background-position: center bottom;
+}
+.show-more-btn{
+	text-transform: uppercase;
+	border: 1px solid rgba(254, 167, 0, 0.9);
+	padding: 10px;
+	display: inline-block;
+	max-width: 200px;
+	margin: 0 auto;
+	cursor: pointer;
+	border-radius: 5px;
+	&:hover{
+		background: rgba(254, 167, 0, 0.9);
+	}
+	&:active{
+		background: rgba(254, 167, 0, 1);
+	}
+}
+.tours-btn{
+	margin: 40px 0;
 }

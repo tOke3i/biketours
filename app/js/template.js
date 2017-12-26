@@ -11,17 +11,17 @@ jQuery(function($) {
 		$(this).find(".text").toggle();
 	});
 
-	/* =============== TESTIMONIAL SLIDER =============== */
-	$('.bike-testimonialSlider').unslider({
-		nav: false,
-		arrows: {
-			//  Unslider default behaviour
-			prev: '<a class="unslider-arrow prev"><i class="mdi mdi-chevron-left"></i></a>',
-			next: '<a class="unslider-arrow next"><i class="mdi mdi-chevron-right"></i></a>',
-		}
-	});
-
-	/* =============== CUSTOM SCROLLBAR STYLE =============== */
+	// /* =============== TESTIMONIAL SLIDER =============== */
+	// $('.bike-testimonialSlider').unslider({
+	// 	nav: false,
+	// 	arrows: {
+	// 		//  Unslider default behaviour
+	// 		prev: '<a class="unslider-arrow prev"><i class="mdi mdi-chevron-left"></i></a>',
+	// 		next: '<a class="unslider-arrow next"><i class="mdi mdi-chevron-right"></i></a>',
+	// 	}
+	// });
+    //
+	// /* =============== CUSTOM SCROLLBAR STYLE =============== */
 	$("#bike-whatWeDo .panel-body").mCustomScrollbar({
 		theme:"default"
 	});
@@ -78,6 +78,6 @@ jQuery(function($) {
 		return false;
 	});
 
-        $('#dashboard').slick();
+        $('#slider-header').slick();
 
 });
