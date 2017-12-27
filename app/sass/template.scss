@@ -3,7 +3,7 @@
 @import "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700";
 
 @import "https://fonts.googleapis.com/css?family=Kaushan+Script";
-
+@import "https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/fonts/Material-Design-Iconic-Font.woff";
 html {
 	line-height: 1.7;
 	margin: 0;
@@ -408,7 +408,7 @@ li {
 	background: none;
 	border: none;
 	border-radius: 0;
-	background: rgba(51,51,51,0.8);
+	background: #444;
 .navbar-brand {
 	color: #fff;
 	font-weight: 700;
@@ -793,6 +793,7 @@ a {
 img {
 	display: block;
 	position: relative;
+	width:100%;
 }
 overflow: hidden;
 color: #fff;
