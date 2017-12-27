@@ -3,7 +3,6 @@ app/design/
 
 .Saved/
 _arc/
-bower_components/
 node_modules/
 .vscode/
 .DS_Store
