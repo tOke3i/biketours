@@ -2,6 +2,7 @@
 @import "https://fonts.googleapis.com/css?family=Roboto:400,700";
 @import "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700";
 @import "https://fonts.googleapis.com/css?family=Kaushan+Script";
+@import "https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/fonts/Material-Design-Iconic-Font.woff";
 html {
   line-height: 1.7;
   margin: 0;
@@ -222,7 +223,7 @@ img.img-full-width {
   opacity: 1; }
 
 .logo-wrap {
-  position: relative;
+  position: absolute;
   width: 30%;
   text-align: center; }
 
@@ -257,7 +258,7 @@ img.img-full-width {
   z-index: 5; }
 
 #bike-slider {
-  padding: 40px 0 0; }
+  padding: 0; }
 
 #bike-slider .carousel-inner > .item {
   text-align: center;
@@ -325,11 +326,10 @@ img.img-full-width {
 .trip-advisor {
   display: inline-block;
   margin: 20px;
-  max-width: 130px;
+  max-width: 80px;
   width: 100%;
-  padding: 15px;
-  border-radius: 10px;
-  background: #00a680; }
+  padding: 3px;
+  border-radius: 10px; }
 
 .trip-advisor:hover {
   cursor: pointer; }
@@ -1136,6 +1136,21 @@ div.pp_default .pp_social {
 
 .tours-btn {
   margin: 40px 0; }
+
+.filters-button-group {
+  text-align: center; }
+
+.filters-button-group .button {
+  border: none;
+  background: rgba(254, 167, 0, 0.9);
+  color: #ffffff;
+  margin: 10px 5px;
+  padding: 7px;
+  border-radius: 3px;
+  outline: none; }
+
+.filters-button-group .button.is-checked {
+  background: rgba(203, 133, 0, 0.9); }
 
 .unslider {
   overflow: auto;
