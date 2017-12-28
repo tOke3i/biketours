@@ -269,7 +269,7 @@ img {
 }
 }
 .logo-wrap{
-  position: relative;
+  position: absolute;
   width: 30%;
   text-align: center;
   img{
@@ -309,7 +309,7 @@ img {
 }
 
 #bike-slider {
-	padding: 40px 0 0;
+	padding: 0;
 .carousel-inner {
 > .item {
 	text-align: center;
@@ -379,15 +379,14 @@ li {
 .trip-advisor{
 	display: inline-block;
 	margin:20px;
-	max-width:130px;
+	max-width:80px;
 	width:100%;
 
 	&:hover{
 		cursor: pointer;
 	}
-	padding:15px;
+	padding:3px;
 	border-radius: 10px;
-	background:#00a680;
 	&:active,&:hover{
 		background:#056d55;
 	}
@@ -1603,4 +1602,21 @@ footer {
 }
 .tours-btn{
 	margin: 40px 0;
+}
+.filters-button-group{
+	text-align: center;
+	.button{
+		border: none;
+		background: $main-bg;
+		color: #fff;
+		margin:10px 5px;
+		padding:7px;
+		-webkit-border-radius:3px;
+		-moz-border-radius:3px;
+		border-radius:3px;
+		outline: none;
+		&.is-checked{
+			background: darken($main-bg,10%)
+		}
+	}
 }

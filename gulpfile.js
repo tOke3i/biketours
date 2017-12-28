@@ -50,12 +50,12 @@ gulp.task("serve", ["style", "html"], function() {
 	server.init({
 		server: "./app",
 		notify: true,
-		open: true,
+		open: false,
 		ui: false
 	});
 
 	gulp.watch("app/sass/**/*.{scss,sass}", ["style"]);
-	gulp.watch("app/html/**/*.*", ["html"]);
+	gulp.watch("app/html/**/*.*", ["html"]).on("change", server.reload);
 	gulp.watch("app/js/*.js").on("change", server.reload);
 });
 
