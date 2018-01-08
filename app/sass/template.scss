@@ -278,6 +278,7 @@ img {
     margin-left: 20px;
     position: absolute;
     max-height: 150px;
+    z-index: 9999;
   }
 }
 
@@ -786,13 +787,20 @@ li {
 	width: 25%;
 	background: #fff;
 	position: relative;
+	min-width: 220px;
+	min-height: 220px;
+
 a {
 	display: block;
 	position: relative;
+	min-width: 220px;
+	min-height: 220px;
 img {
 	display: block;
 	position: relative;
 	width:100%;
+	min-width: 220px;
+	min-height: 220px;
 }
 overflow: hidden;
 color: #fff;
@@ -1119,6 +1127,11 @@ iframe.booktour {
   position: relative;
   top: -20px;
 }
+.conditions{
+	li{
+		margin-left: 20px;
+	}
+}
 #bike-searchForm {
 	position: fixed;
 	left: 0;
@@ -1334,7 +1347,7 @@ article {
 }
 @media (max-width: 767px) {
 	#bike-navbar {
-		background: $main-bg;
+		background: #333;
 	.navbar-header {
       float: right !important;
 		padding-right: 30px;
@@ -1504,6 +1517,7 @@ footer {
     margin-left: 0;
     left: 0!important;
     width: 80px;
+
   }
 	#bike-slider .carousel-indicators {
 	li .inner {

@@ -232,7 +232,8 @@ img.img-full-width {
   top: -36px;
   margin-left: 20px;
   position: absolute;
-  max-height: 150px; }
+  max-height: 150px;
+  z-index: 9999; }
 
 #bike-header {
   position: relative;
@@ -690,18 +691,24 @@ section {
   float: left;
   width: 25%;
   background: #ffffff;
-  position: relative; }
+  position: relative;
+  min-width: 220px;
+  min-height: 220px; }
 
 #bike-portfolio .bike-portfolioItems li a {
   display: block;
   position: relative;
+  min-width: 220px;
+  min-height: 220px;
   overflow: hidden;
   color: #ffffff; }
 
 #bike-portfolio .bike-portfolioItems li a img {
   display: block;
   position: relative;
-  width: 100%; }
+  width: 100%;
+  min-width: 220px;
+  min-height: 220px; }
 
 #bike-portfolio .bike-portfolioItems li .overlay {
   position: absolute;
@@ -997,6 +1004,9 @@ footer .bike-copyright {
 iframe.booktour {
   position: relative;
   top: -20px; }
+
+.conditions li {
+  margin-left: 20px; }
 
 #bike-searchForm {
   position: fixed;
@@ -1609,7 +1619,7 @@ div.pp_default .pp_social {
 
 @media (max-width: 767px) {
   #bike-navbar {
-    background: rgba(254, 167, 0, 0.9); }
+    background: #333333; }
   #bike-navbar .navbar-header {
     float: right !important;
     padding-right: 30px; }
