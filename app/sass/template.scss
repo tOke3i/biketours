@@ -308,7 +308,16 @@ img {
 	position: relative;
 	z-index: 5;
 }
-
+#accordion .panel-body{
+	ul li{
+		//list-style: none;
+		margin-top:10px;
+		padding-left:10px !important;
+	}
+}
+.map-col-wrap{
+	margin-top:38px;
+}
 #bike-slider {
 	padding: 0;
 .carousel-inner {
@@ -317,6 +326,7 @@ img {
 	color: #fff;
 }
 }
+
 .carousel-indicators {
 	width: 100%;
 	left: 0;

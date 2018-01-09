@@ -1,6 +1,6 @@
 build/
 app/design/
-
+app/*.html
 .Saved/
 _arc/
 bower_components/
@@ -15,3 +15,4 @@ node_modules/
 .publish
 ex_files
 Thumbs.db
+*.html
