@@ -308,6 +308,31 @@ img {
 	position: relative;
 	z-index: 5;
 }
+#accordion-book{
+	.panel-body{
+		padding: 60px 0  !important;
+	}
+	.panel-default>.panel-heading{
+		background: $main-bg;
+		#bookTour{
+			margin-top: 20px;
+		}
+	}
+}
+#accordion-team{
+	 .panel{
+		 box-shadow: none;
+	}
+	.panel-default{
+		border-color: transparent;
+	}
+	.panel-heading{
+		background: transparent;
+		border:0;
+		border-color: transparent;
+		box-shadow: none;
+	}
+}
 #accordion .panel-body{
 	ul li{
 		//list-style: none;
@@ -315,7 +340,7 @@ img {
 		padding-left:10px !important;
 	}
 }
-.map-col-wrap{
+.map-col-wrap, .inf-wrap{
 	margin-top:38px;
 }
 #bike-slider {
@@ -452,6 +477,7 @@ li > a {
   .booktour{
     width:100%;
     max-width: 700px;
+
   }
 .bike-menuItem {
 	float: right;
@@ -1015,6 +1041,12 @@ strong{
 }
 footer {
 	color: #fff;
+	ul,li{
+		list-style: none;
+	}
+	li{
+		display: inline-block;
+	 }
   .bike-subHeading{
     font-weight: 400;
     font-family: 'Kaushan Script', cursive;
@@ -1614,7 +1646,7 @@ footer {
 	padding: 10px;
 	display: inline-block;
 	max-width: 200px;
-	margin: 0 auto;
+	margin: 10px auto 20px;
 	cursor: pointer;
 	border-radius: 5px;
 	&:hover{

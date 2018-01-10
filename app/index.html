@@ -74,7 +74,7 @@
                         <ul class="nav navbar-nav">
                             <li class="active"><a href="#bike-story">На старт <span class="sr-only">(current)</span></a>
                             </li>
-                            <li><a class="link-to-page" href="page3-bel.html">Умовы</a></li>
+                            <li><a  href="#conditons">Умовы</a></li>
                             <li><a href="#bike-ourTeam">Пра нас</a></li>
                             <li><a href="#bike-portfolio">Нашыя экскурсии</a></li>
                             <li><a href="#bike-latestBlog">Навiны</a></li>
@@ -92,13 +92,6 @@
             <div class="container">
                 <div class="bike-followUs text-center">
                     <div class="socialNetwork">
-                        <!--<a href="" class="bike-icon"><i class="mdi mdi-facebook"></i></a>-->
-                        <!--<a href="" class="bike-icon"><i class="mdi mdi-twitter"></i></a>-->
-                        <!--<a href="" class="bike-icon"><i class="mdi mdi-vk"></i></a>-->
-                        <!--<a href="" class="bike-icon"><i class="mdi mdi-instagram"></i></a>-->
-                        <!--<a href="" class="bike-icon"><i class="mdi mdi-youtube-play"></i></a>-->
-
-
                     </div>
                 </div>
                 <div class="contants-header text-center ">
@@ -308,7 +301,7 @@
                     <a class="bike-prettyPhoto" title="Подробнее" href="img/ratusza.jpg">
                         <img src="img/tours/raubiczy.jpg"/>
                         <div class="overlay">
-                            <div class="content">c
+                            <div class="content">
                                 <i class="mdi mdi-bike bike-icon"></i>
                                 <h4 class="title">Гравітацыя must die</h4>
                             </div>
@@ -416,20 +409,23 @@
 </section><!--/#bike-portfolio-->
 
 
-<section class="conditions">
+<section class="conditions" id="conditons">
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-xs-12">
+            <h2 class="text-center">
+                Калі ласка, прачытайце гэтую неабходную інфармацыю перад тым, як далучыцца да нашых вандровак.
+            </h2>
+            </div>
+            <div class="col-md-6 col-xs-12 inf-wrap">
 
                 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                    <p class="text">
-                        Описание
-                    </p>
+
                     <div class="panel panel-default">
                         <div class="panel-heading" role="tab" id="headingOne">
                             <h4 class="panel-title">
                                 <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                                   href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                   href="#collapseOne" aria-expanded="false" aria-controls="collapseThree">
                                     <i class="mdi mdi-chevron-up bike-icon arrow"></i>
                                    Агульная инфармацыя
                                 </a>
@@ -615,7 +611,20 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
+
+            </div>
+            <div class="col-md-6 col-xs-12 map-col-wrap">
+                <p align="center">
+                    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1Jd8koKSNHieCewMlWG4B-aIjabc" width="100%"
+                            height="400px"></iframe>
+                    <br>для прагляду мапы лепей выкарыстаць <a href="http://www.google.com/intl/ru/chrome/">Google
+                    Chrome</a>
+                    <br>калі вы не можаце праглядзець мапу - прайдзіце <a
+                        href="https://drive.google.com/open?id=1Jd8koKSNHieCewMlWG4B-aIjabc&amp;usp=sharing" target="_blank">па гэтай
+                    спасылцы</a> альбо <a href="#kantakty">скантактуйцеся з намі</a>
+                </p>
 
             </div>
         </div>
@@ -623,7 +632,33 @@
 </section>
 
 
+<section id="book-a-tour">
+    <div class="panel-group" id="accordion-book" role="tablist" aria-multiselectable="true">
+        <h2 class="text-center">
+            Замова экскурсіі:
+        </h2>
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" >
+                <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                       href="#bookTour" aria-expanded="false" aria-controls="collapseThree">
+                        <i class="mdi mdi-chevron-up bike-icon arrow"></i>
+                        Замова экскурсіі:
+                    </a>
 
+                </h4>
+                </a>
+            </div>
+            <div id="bookTour" class="panel-collapse collapse in" role="tabpanel"
+                 aria-labelledby="headingOne">
+                <div class="panel-body">
+                    <iframe  class="booktour" src="https://docs.google.com/forms/d/e/1FAIpQLSeB2SbRPlDA6s30zJdpU2aCP1hkWuYKJhUuF-aO6-WR_a2w4Q/viewform?embedded=true" width="100%" height="1400" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
 
 <!-- Our Team
 ================================================== -->
@@ -637,12 +672,6 @@
                 <div class="col-md-3 col-sm-3">
                     <div class="item">
                         <div class="overlay" href="#">
-                            <div class="content">
-                                <a href="#" class="nino-icon"><i class="mdi mdi-facebook"></i></a>
-                                <a href="#" class="nino-icon"><i class="mdi mdi-twitter"></i></a>
-                                <a href="#" class="nino-icon"><i class="mdi mdi-vk"></i></a>
-                                <a href="#" class="nino-icon"><i class="mdi mdi-instagram"></i></a>
-                            </div>
                             <img src="img/koniport.jpg" alt="">
                         </div>
                     </div>
@@ -654,12 +683,7 @@
                 <div class="col-md-3 col-sm-3">
                     <div class="item">
                         <div class="overlay" href="#">
-                            <div class="content">
-                                <a href="#" class="nino-icon"><i class="mdi mdi-facebook"></i></a>
-                                <a href="#" class="nino-icon"><i class="mdi mdi-twitter"></i></a>
-                                <a href="#" class="nino-icon"><i class="mdi mdi-vk"></i></a>
-                                <a href="#" class="nino-icon"><i class="mdi mdi-instagram"></i></a>
-                            </div>
+
                             <img src="img/karotkina2.jpg" alt="">
                         </div>
                     </div>
@@ -671,12 +695,6 @@
                 <div class="col-md-3 col-sm-3">
                     <div class="item">
                         <div class="overlay" href="#">
-                            <div class="content">
-                                <a href="#" class="nino-icon"><i class="mdi mdi-facebook"></i></a>
-                                <a href="#" class="nino-icon"><i class="mdi mdi-twitter"></i></a>
-                                <a href="#" class="nino-icon"><i class="mdi mdi-vk"></i></a>
-                                <a href="#" class="nino-icon"><i class="mdi mdi-instagram"></i></a>
-                            </div>
                             <img src="img/hajduk.jpg" alt="">
                         </div>
                     </div>
@@ -689,12 +707,6 @@
                 <div class="col-md-3 col-sm-3">
                     <div class="item">
                         <div class="overlay" href="#">
-                            <div class="content">
-                                <a href="#" class="nino-icon"><i class="mdi mdi-facebook"></i></a>
-                                <a href="#" class="nino-icon"><i class="mdi mdi-twitter"></i></a>
-                                <a href="#" class="nino-icon"><i class="mdi mdi-vk"></i></a>
-                                <a href="#" class="nino-icon"><i class="mdi mdi-instagram"></i></a>
-                            </div>
                             <img src="img/karaliou.jpg" alt="">
                         </div>
                     </div>
@@ -706,15 +718,137 @@
             </div>
         </div>
     </div>
-    <div class="col-md-12 text-center ">
-        <a class="show-more-btn" href="/page5-bel.html">Узнай больш</a>
+
+
+
+    <div class="panel-group" id="accordion-team" role="tablist" aria-multiselectable="true">
+
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab">
+                <h4 class="panel-title text-center">
+                    <a class="show-more-btn" data-toggle="collapse" data-parent="#accordion-team"
+                       href="#collapseTeam" aria-expanded="false" aria-controls="collapseThree">
+                        Узнай больш
+                    </a>
+
+                </h4>
+                </a>
+            </div>
+            <div id="collapseTeam" class="panel-collapse collapse" role="tabpanel"
+                 aria-labelledby="headingOne">
+                <div class="panel-body">
+                    <div class="container">
+            <p>
+                Прывітанне! давайце знаёміцца: мы - суполка "Менскі велашпацыр", экскурсаводы, аматары Мінска і
+                ровараў.
+                Нас аб'ядноўвае хранічнае няўменне сядзець дома, мы дужа любім забірацца далёка ад цёплага,
+                наседжанага хатняга кутка, каб потым знаходзіць дарогу назад і пажадана з прыгодамі.
+                Мы любім свой горад - не толькі яго самую прыгожую, цэнтральную частку, цэнтральныя праспекты,
+                Верхні горад і Траецкае
+                - але і яго закуткі, прыватныя сектары і спальныя раёны, прамзоны і недарэчныя пералескі.
+                Для нас вялікая асалода - распавядаць пра Мінск іншым людзям, як тутэйшым, так і прыезжым,
+                асабліва з выкарыстаннем ровара. Ровар - асабліва зручны від транспарта для знаёмства з горадам:
+                дробныя, але важныя дэталі - ужо не схаваюцца ад вачэй вандроўніка,
+                ледзь прыкметныя нюансы ў зацішных дварах часам могуць сказаць болей, чым пампезныя помнікі на
+                цэнтральных плошчах.
+                "Менскі велашпацыр" стартаваў увесну 2014 г. і на сённяшні дзень нашая велабанда выглядае
+                наступным чынам:</p>
+            <div class="row team-item">
+                 <div class="col-md-12">
+                    <br><a href="koniport.jpg"><img src="img/koniport.jpg" alt="Abramchuk" width="25%" align="left" hspace="5" vspace="5"></a>
+                    <br><strong>Раман Абрамчук</strong>, экскурсавод, культуролаг, заснавальнік "Менскага велашпацыра".
+                    <br><strong>Мовы экскурсій:</strong> беларуская, руская, польская, ангельская, французская.
+                    <br><strong>Улюбёныя мясціны:</strong> Верхні горад у Мінску, Замкавая гара у Мсціславе (Беларусь),
+                    Куршская каса ў Літве.
+                    <br><strong>Аўтарскія маршруты:</strong> "Мінскія хіпаны" ("Мінск Джынсавы"), "Мінскія небажыхары:
+                    знаёмства з манументальнай скульптурай сталічных дахаў", "Мінск графа Чапскага", "Мінск экуменічны:
+                    богашукальніцкая велапрыгода", "Зімовая казка Лошыцы: лыжная экскурсія".
+                    <br><strong>Пра сябе:</strong> "Мір. Ровар. Рок'н'рол."
+
+                    <br>асабістыя кантакты: +375297040018, romannn@tut.by, <a href="https://www.facebook.com/ramanabramchuk">
+                    Facebook</a>, <a href="http://vk.com/feed#/ramanabramchuk">Вконтакте</a>.
+                    <br>УНП 192201977 (пасведчанне ІП ад 28.01.2014, выдадзена Мінгарвыканкамам), банкаўскія рэквізіты
+                    - <a href="bel/page3-bel.html#aplata" target="_blank">тут</a>.
+                    <br>Пасведчанне аб атэстацыі экскурсавода Нацыянальнага агенцтва па турызме Рэспублікі Беларусь - №
+                    000556, 30.04.2009, падоўжана - № 001533, 31.04.2014
+                    <br><a href="belbedzh.jpg"><img src="img/belbedzh.jpg" alt="Abramchuk-bedzh" width="15%" align="middle" hspace="5" vspace="5"></a>
+                </div>
+            </div>
+
+            <div class="row team-item">
+                <div class="col-md-12">
+                    <br><a href="karotkina.jpg"><img src="img/karotkina2.jpg" alt="Karotkina" width="25%" align="left" hspace="5" vspace="5"></a>
+                    <p>
+                        <br><strong>Валянціна Кароткіна</strong>, экскурсавод, выкладчык гісторыі.
+                        <br><strong>Мовы экскурсій:</strong> беларуская, руская, польская.
+                        <br><strong>Улюбёныя мясціны:</strong> Лошыцкi парк у Мінску, Замкавая гара у Браславе
+                        (Беларусь),
+                        горы Чуфут-Кале (Крым).
+                        <br><strong>Аўтарскія маршруты:</strong> "Жыццё - Айчыне, гонар - нікому! Па мясцінах Чапскіх на
+                        Міншчыне", "Менск гандлёвы", "Менск у Мінску", "Я хацеў бы спаткацца з вамі на ровары: менскімі
+                        шляхамі Багдановіча", "Вела-Дзяды", "Па слядах Ваньковічаў".
+                        <br><strong>Пра сябе:</strong> "Люблю спазнаваць мясціны, дзе ніколі не была, цягнікі, дарогі,
+                        зоркі
+                        і поўню, цяжкі заплечнік за спінай і вогнішчы."
+
+                        <br>Пасведчанне аб атэстацыі экскурсавода Нацыянальнага агенцтва па турызме Рэспублікі Беларусь
+                        - №
+                        000899, 25.03.2011
+                    </p>
+                    <br><a href="karotkina-bedzh.jpg"><img src="img/karotkina-bedzh.jpg" alt="karotkina-bedzh" width="15%" align="middle" hspace="5" vspace="5"></a>
+                </div>
+            </div>
+            <div class="row team-item">
+                <div class="col-md-12">
+
+                    <br><a href="hajduk.jpg"><img src="img/hajduk.jpg" alt="hajduk" width="25%" align="left" hspace="5" vspace="5"></a>
+                    <br><strong>Таццяна Гайдук</strong>, экскурсавод, гісторык.
+                    <br><strong>Мовы экскурсіі:</strong> беларуская, руская.
+                    <br><strong>Улюбёныя мясціны:</strong> Ракаўскае прадмесце ў Мінску, мястэчка Косава (Беларусь),
+                    вежа Гедыміна ў Вільні (Літва).
+                    <br><strong>Аўтарскія маршруты:</strong> "Мінскія прадмесці: Каралішчавічы"
+                    <br><strong>Пра сябе:</strong> "Люблю файныя мясціны нашай Радзімы, іх шмат, але гісторыю іх мы
+                    забылі ці не ведаем."
+
+                    <br>
+                    <br>
+                    <br>Пасведчанне аб атэстацыі экскурсавода Нацыянальнага агенцтва па турызме Рэспублікі Беларусь - №
+                    001816, 11.12.2014
+                    <br><a href="hajduk-bedzh.jpg">
+                    <img src="img/hajduk-bedzh.jpg" alt="hajduk-bedzh" width="15%">
+                </a>
+
+                </div>
+            </div>
+
+            <div class="row team-item">
+                <div class="col-md-12">
+                    <br><a href="karaliou.jpg"><img src="img/karaliou.jpg" alt="Karaliou-guide" width="25%" align="left" hspace="5" vspace="5"></a>
+
+                        <br><strong>Павел Каралёў,</strong> экскурсавод, гісторык.
+                        <br><strong>Мовы экскурсіі:</strong> беларуская, руская.
+                        <br><strong>Улюбёныя мясціны:</strong> Верхні горад у Менску, беларускія мястэчкі Лукомль,
+                        Чарэя,
+                        самы вялікі валун у Беларусі - ля вёскі Горкі Шумілінскага раёна, і ўсе мясціны ў свеце, дзе
+                        ёсць
+                        шмат цікавага.
+                        <br><strong>Пра сябе:</strong> "Люблю паказваць малавядомыя мясціны Менска, чытаць гістарычную
+                    <br>
+                    <br>Пасведчанне аб атэстацыі экскурсавода Нацыянальнага агенцтва па турызме Рэспублікі Беларусь - №
+                    000720, 05.02.2010
+
+                    <br><a href="karaliou-bedzh.jpg">
+                    <img src="img/karaliou-bedzh.jpg" alt="Karaliou-bedzh" width="15%" align="middle" hspace="5" vspace="5"></a>
+                </div>
+            </div>
+        </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 </section><!--/#nino-ourTeam-->
 
-
-<div class="col-md-12 text-center tours-btn">
-    <a class="show-more-btn" href="/page2-bel.html">Узнай больш</a>
-</div>
 <!-- Latest Blog
 ================================================== -->
 <section id="bike-latestBlog">
@@ -804,58 +938,66 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="col-md-12 text-center ">
-        <a class="show-more-btn" href="/page4-bel.html">Узнай больш</a>
-    </div>
-</section><!--/#bike-latestBlog-->
-
-<!-- Map
-================================================== -->
-<section id="bike-map">
-    <div class="container">
-        <h2 class="bike-sectionHeading">
-            <i class="mdi mdi-map-marker bike-icon"></i>
-            <span class="text">Паглядець Мапу</span>
-            <span class="text" style="display: none;">Закрыць</span>
-        </h2>
-        <div class="mapWrap">
-            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1Jd8koKSNHieCewMlWG4B-aIjabc" width="100%"
-                    height="480"></iframe>
+        <div class="col-md-12 text-center ">
+            <a class="show-more-btn" href="/page4-bel.html">Узнай больш</a>
         </div>
-    </div>
-</section><!--/#bike-map-->
 
+    </div>
+
+</section><!--/#bike-latestBlog-->
 
 
 <!-- Footer
 ================================================== -->
-<footer id="footer">
+<footer id="footer" class="footer">
     <div class="container">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-8">
                 <div class="colInfo">
                     <div class="footerLogo">
                         <a href="#" ><span class="bike-subHeading">MienskBikeTour</span></a>
                     </div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    </p>
+
                     <div class="bike-followUs">
                         <div class="socialNetwork">
                             <a href="" class="bike-icon"><i class="mdi mdi-facebook"></i></a>
-                            <a href="" class="bike-icon"><i class="mdi mdi-twitter"></i></a>
                             <a href="" class="bike-icon"><i class="mdi mdi-vk"></i></a>
-                            <a href="" class="bike-icon"><i class="mdi mdi-instagram"></i></a>
-                            <a href="" class="bike-icon"><i class="mdi mdi-pinterest"></i></a>
-                            <a href="" class="bike-icon"><i class="mdi mdi-google-plus"></i></a>
-                            <a href="" class="bike-icon"><i class="mdi mdi-youtube-play"></i></a>
                         </div>
                     </div>
+                    <div>
+                        <div class="col-md-3">
+                            <a href="tel:+375297040018">
+                                +375297040018
+                            </a>
 
+                            <a href="tel:+375298632150">
+                                +375298632150
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="mail:info@mienskbiketour.by">info@mienskbiketour.by</a>
+                        </div>
+                        <div class="col-md-5">
+                            <ul>
+                                <li><a href="index-ru.html">
+                                    RU
+                                </a></li>
+                                <li><a href="index-en.html">
+                                    ENG
+                                </a>
+                                </li>
+                                <li><a href="index-pl.html">
+                                    POL
+                                </a></li>
+                                <li><a href="index-fr.html">
+                                    FRA
+                                </a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-6">
+            <div class="col-md-4 col-sm-4">
                 <div class="colInfo">
                     <h3 class="bike-colHeading">Blogs</h3>
                     <ul class="listArticles">
@@ -920,6 +1062,7 @@
 <script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 <!--<script type="text/javascript" src="js/unslider-min.js"></script>-->
 <script type="text/javascript" src="js/slick.js"></script>
+<script type="text/javascript" src="js/aos.js"></script>
 <script type="text/javascript" src="js/template.js"></script>
 
 <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
