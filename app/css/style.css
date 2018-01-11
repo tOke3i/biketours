@@ -352,13 +352,23 @@ img.img-full-width {
 .bruto {
   margin-top: 20px; }
 
+footer .trip-advisor svg {
+  fill: rgba(254, 167, 0, 0.9); }
+
 .trip-advisor {
   display: inline-block;
   margin: 20px;
   max-width: 80px;
   width: 100%;
+  max-height: 25px;
+  vertical-align: middle;
   padding: 3px;
   border-radius: 10px; }
+
+.trip-advisor svg {
+  fill: #ffffff;
+  width: 25px;
+  max-height: 25px; }
 
 .trip-advisor:hover {
   cursor: pointer; }

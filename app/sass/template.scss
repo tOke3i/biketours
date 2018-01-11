@@ -412,11 +412,25 @@ li {
 .bruto{
 	margin-top:20px;
 }
+footer{
+	.trip-advisor{
+		svg{
+			fill: $main-bg;
+		}
+	}
+}
 .trip-advisor{
 	display: inline-block;
 	margin:20px;
 	max-width:80px;
 	width:100%;
+	max-height:25px;
+	vertical-align: middle;
+		svg{
+			fill: #fff;
+			width: 25px;
+			max-height:25px;
+		}
 
 	&:hover{
 		cursor: pointer;
