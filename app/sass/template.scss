@@ -388,7 +388,26 @@ img {
 .bruto {
   margin-top: 20px;
 }
+.dropdown-wrap{
+  position: relative;
+  ul, li{
+    list-style: none;
+    padding-left:0;
+  }
+  li{
+    border-bottom:1px solid #000;
+  }
+  .dropdown{
+    display: inline-block;
+    position: absolute;
+    top:30px;
+    left:0;
+    background: #333;
+    z-index: 22;
+    padding:10px 25px;
 
+  }
+}
 footer {
   a:hover {
     background: none !important;
@@ -415,6 +434,8 @@ footer {
       display: -ms-inline-flexbox;
       display: inline-flex;
     }
+
+
   }
   .trip-advisor svg {
     fill: rgba(254, 167, 0, 0.9);
