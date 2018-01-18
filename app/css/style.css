@@ -14530,7 +14530,8 @@ div.pp_default .pp_social {
 
 @media screen and (max-width: 768px) {
   .mobile-logo-slogon {
-    display: block; }
+    display: block;
+    position: absolute; }
   .logo-wrap {
     display: none; }
   footer .socialNetwork {

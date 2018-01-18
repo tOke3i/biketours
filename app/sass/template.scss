@@ -251,6 +251,7 @@ img {
   padding: 7px;
   @media screen and (max-width:768px){
     display: block;
+    position: absolute;
   }
 }
 .logo-wrap {
