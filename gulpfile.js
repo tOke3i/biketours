@@ -13,12 +13,13 @@ var clean = require("gulp-clean");
 var csso = require("gulp-csso");
 var image = require("gulp-image");
 var minify = require("gulp-minify");
-
+var concat = require('gulp-concat');
+var jslint = require('gulp-jslint');
 // sass task
 gulp.task("style", function() {
 	gulp.src("app/sass/style.scss")
 		.pipe(plumber())
-		.pipe(sass())
+			.pipe(sass())
 		.pipe(postcss([
 			autoprefixer({
 				browsers: ["last 6 versions"]
@@ -34,6 +35,7 @@ gulp.task("style", function() {
 			stream: true
 		}));
 });
+
 
 // html build task
 gulp.task("html", function() {
@@ -105,15 +107,15 @@ gulp.task("img-min", function() {
 		.pipe(gulp.dest("build/img/"));
 });
 
-gulp.task("js-min", function() {
-	gulp.src("app/js/*.js")
-		.pipe(minify({
-			ext: {
-				min: ".min.js"
-			},
-		}))
-		.pipe(gulp.dest("build/js"))
-});
+//scripts
+// gulp.task('scripts', function() {
+// 	return 	gulp.src('app/js/*.js')
+//
+// 		.pipe(concat('main.js'))
+// 		.pipe(gulp.dest('app/js/'));
+// });
+
+
 
 // build task (final)
-gulp.task("build", ["clean", "copy", "style-min", "img-min", "js-min"], function() {});
+gulp.task("build", ["clean", "copy", "style-min", "img-min"], function() {});
