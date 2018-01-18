@@ -14,7 +14,6 @@ var csso = require("gulp-csso");
 var image = require("gulp-image");
 var minify = require("gulp-minify");
 var concat = require('gulp-concat');
-var jslint = require('gulp-jslint');
 // sass task
 gulp.task("style", function() {
 	gulp.src("app/sass/style.scss")
