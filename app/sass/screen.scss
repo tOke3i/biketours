@@ -685,37 +685,6 @@ h5, .h5, h6, .h6 {
 #CDSSCROLLINGRAVE.narrow {
   width: 100% !important;
 }
-#footer {
-  margin-top: 70px;
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    li {
-      text-transform: uppercase;
-      a {
-        color: #000;
-        text-transform: uppercase;
-        &:hover {
-          text-decoration: none;
-        }
-      }
-      &.menu-main-item {
-        font-size: 120%;
-        margin-bottom: 10px;
-      }
-    }
-  }
-  .brands {
-    margin-bottom: 10px;
-    text-align: center;
-    img {
-      max-width: 100%;
-      margin: 0 auto;
-      display: block;
-    }
-  }
-}
 .copyright {
   display: block;
   margin: 20px auto;
