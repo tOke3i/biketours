@@ -8896,6 +8896,73 @@ ul.steps li.active:before {
   -webkit-transform: perspective(2500px) rotateX(0);
   transform: perspective(2500px) rotateX(0); }
 
+.about-wrap-flex {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.about-block-wrap {
+  min-width: 260px;
+  margin-top: 30px;
+  overflow: visible;
+  position: relative; }
+
+.about-block-wrap:hover {
+  color: #333333; }
+
+.about-block-wrap:hover .about-hint {
+  display: block; }
+
+.about-block {
+  border-radius: 100%;
+  background: rgba(254, 167, 0, 0.9);
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+  position: relative; }
+
+.about-icon {
+  font-size: 40px; }
+
+.about-title {
+  position: static;
+  text-transform: uppercase;
+  font-family: Roboto, sans-serif;
+  margin-top: 20px;
+  font-size: 14px; }
+
+.about-hint {
+  display: none;
+  color: #333333;
+  position: absolute;
+  line-height: 16px;
+  font-weight: 400;
+  font-size: 14px;
+  bottom: 160px;
+  right: -100px;
+  background: rgba(254, 167, 0, 0.9);
+  padding: 10px;
+  max-width: 200px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px orangered; }
+
 @media (min-width: 767px) {
   .navbar-header {
     float: right !important; } }
@@ -9634,7 +9701,9 @@ ul.steps li.active:before {
     -ms-flex-order: 22;
     order: 22; }
   footer .colInfo {
-    text-align: center; } }
+    text-align: center; }
+  .about-hint {
+    right: 0; } }
 
 @media (max-device-width: 480px) and (orientation: landscape) {
   .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
