@@ -9910,6 +9910,8 @@ ul.steps li.active:before {
     padding: 7px 0 5px !important; } }
 
 @media (max-width: 640px) {
+  .tour-text-col {
+    width: 100% !important; }
   .languages-wrap {
     position: absolute; }
   section {

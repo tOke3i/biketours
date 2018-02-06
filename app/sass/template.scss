@@ -2029,6 +2029,9 @@ div {
 }
 
 @media (max-width: 640px) {
+  .tour-text-col{
+    width:100% !important;
+  }
   .languages-wrap {
     position: absolute;
   }
