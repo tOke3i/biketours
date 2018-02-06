@@ -67,23 +67,24 @@
         </h2>
     </div>
     <div class="button-group filters-button-group">
-        <button class="button is-checked" data-filter="*">Блiжэйшыя</button>
-        <button class="button is-checked" data-filter="*">гарадскія</button>
+        <button class="button is-checked" data-filter=".nearest">Блiжэйшыя</button>
+        <button class="button" data-filter="*">гарадскія</button>
         <button class="button" data-filter=".country">ЗАГАРАДНЫЯ</button>
         <button class="button" data-filter=".exclusive">ЭКСКЛЮЗІЎ</button>
-        <button class="button is-checked" data-filter="*">ЎСЕ</button>
+        <button class="button " data-filter="*">ЎСЕ</button>
     </div>
 
     <div class="sectionContent">
         <div class="container">
             <ul class="bike-portfolioItems  grid">
-                <li class="item">
+                <li class="item nearest">
                     <a class="bike-prettyPhoto" title="Подробнее" href="/page2-a-bel.html">
                         <img src="img/tours/ratusza.jpg"/>
                         <div class="overlay">
                             <div class="content">
                                 <i class="mdi mdi-bike bike-icon"></i>
                                 <h4 class="title">Аглядная экскурсія"</h4>
+                                <p>01.05.2018</p>
                             </div>
                         </div>
                     </a>
@@ -276,6 +277,7 @@
                 <li class="item exclusive">
                     <a class="bike-prettyPhoto" title="Подробнее" href="/nopage-bel.html">
                         <img src="img/tours/zimovaja-loszyca.jpg"/>
+
                         <div class="overlay">
                             <div class="content">
                                 <i class="mdi mdi-bike bike-icon"></i>
@@ -903,7 +905,7 @@
                                <i class="fas fa-users"></i>
                            </div>
                        </div>
-                       <p class="about-title"> прафесійныя гіды </p>
+                       <p class="about-title">прафесійныя гіды </p>
                        <p class="about-hint">
                            Кожны з нас - прайшоў атэстацыю ў Нацыянальным агенцтве па турызме Рэспублікі Беларусь і мае адпаведнае пасведчанне для правядзення экскурсій. Кожны з нас - мае досвед правядзення экскурсій па Мінску і Беларусі
                        </p>
@@ -993,7 +995,8 @@
                     <div class="container">
                         <br>
                         <div class="row nino-hoverEffect">
-                            <div class="col-md-3 col-sm-3">
+
+                            <div class="col-md-4 col-sm-4">
                                 <div class="item">
                                     <div class="overlay" href="#">
                                         <img src="img/koniport.jpg" alt="">
@@ -1004,19 +1007,7 @@
                                     <span class="regency">экскурсавод, культуролаг, заснавальнік "Менскага велашпацыра". </span>
                                 </div>
                             </div>
-                            <div class="col-md-3 col-sm-3">
-                                <div class="item">
-                                    <div class="overlay" href="#">
-
-                                        <img src="img/karotkina2.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="info">
-                                    <h4 class="name">Валянціна Кароткіна </h4>
-                                    <span class="regency">Экскурсавод, выкладчык гісторыі.</span>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-3">
+                            <div class="col-md-4 col-sm-4">
                                 <div class="item">
                                     <div class="overlay" href="#">
                                         <img src="img/hajduk.jpg" alt="">
@@ -1028,7 +1019,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-3 col-sm-3">
+                            <div class="col-md-4 col-sm-4">
                                 <div class="item">
                                     <div class="overlay" href="#">
                                         <img src="img/karaliou.jpg" alt="">
@@ -1043,7 +1034,50 @@
                         <h2 class="bike-sectionHeading our-customers-title">
                             нашыя кліенты
                         </h2>
-                        <div class="about-wrap-flex"></div>
+                        <div class="about-wrap-flex">
+                            <img src="/img/clients/logo-azs.png" alt="A100">
+                            <img src="/img/clients/softeq.png" alt="SOFTEQ">
+                            <img src="/img/clients/epam.png" alt="EPAM">
+                            <img src="/img/clients/belrail.png" alt="БЕЛ">
+                            <img src="/img/clients/french-amb.png" alt="Французское посольствоая амбасада">
+                            <img src="/img/clients/samsolutions.jpeg" alt="samsolutions">
+                            <img src="/img/clients/unistar.png" alt="unistar">
+                            <img src="/img/clients/bank.jpeg" alt="БАНК">
+                            <img src="/img/clients/check_point.gif" alt="CHECKPOINT">
+
+                        </div>
+                        <h2 class="bike-sectionHeading our-customers-title">
+                            нашыя сябры
+                        </h2>
+                        <div class="about-wrap-flex">
+                            <img src="/img/friends/fest.jpeg" alt="FEST">
+                            <img src="/img/friends/green.jpg" alt="green">
+                            <img src="/img/friends/budzma.png" alt="EPAM">
+                        </div>
+                        <h2 class="bike-sectionHeading our-customers-title">
+                            нашыя партнеры
+                        </h2>
+                        <div class="about-wrap-flex">
+                            <a href="http://prostoprokat.by/">
+                                <img src="/img/partners/prostoprokat.png" alt="prostoprokat">
+                            </a>
+                            <a href="http://velodisco.by/">
+                                <img src="/img/partners/velodisco.jpg" alt="velodisco">
+                            </a>
+                            <a href="http://tvoirovar.by/">
+                                <img src="/img/partners/tvoirovar.png" alt="A100">
+                            </a>
+                            <a href="http://wildbike.by/">
+                                <img src="/img/partners/wildbike.png" alt="wildbike">
+                            </a>
+
+                        </div>
+                        <div  class="text-center collapse-about" data-toggle="collapse" data-parent="#accordion-team"
+                              href="#collapseTeam" aria-expanded="false" aria-controls="collapseThree">
+                            <i class="fas fa-caret-up"></i>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>

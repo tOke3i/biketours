@@ -1975,9 +1975,6 @@ div {
       left: 0;
     }
     .languages-wrap {
-      position: absolute;
-      right: 15px;
-      top: 0;
       margin: 0;
       float: right;
       padding-right: 80px;
@@ -2031,9 +2028,6 @@ div {
 @media (max-width: 640px) {
   .tour-text-col{
     width:100% !important;
-  }
-  .languages-wrap {
-    position: absolute;
   }
   section {
     padding: 30px 0;
@@ -2118,10 +2112,6 @@ div {
 
 @media (max-width: 480px) {
   .languages-wrap {
-    top: auto !important;
-    position: absolute !important;
-    bottom: 0 !important;
-    padding-right: 0 !important;
   }
   .logo-wrap img {
     margin-left: 0;
@@ -2150,3 +2140,20 @@ div {
     width: 100%;
   }
 }
+.about-wrap-flex img {
+  max-width: 200px;
+  margin: 0 20px;
+}
+.collapse-about{
+  font-size: 80px;
+}
+#bike-ourTeam{
+  .bike-sectionHeading{
+    margin-top: 20px;
+  }
+}
+.row.nino-hoverEffect img {
+  max-width: 400px;
+  margin: 0 auto;
+  display: block;
+ }
