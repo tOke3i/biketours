@@ -106,3 +106,14 @@ jQuery(function($) {
 	});
 
 });
+[]
+$(document).ready(function(){
+    $("#book-menu").on("click",function(){
+    	$("#accordion-book .panel-heading .collapsed").trigger( "click" )
+	});
+
+    $("a[href='#bike-portfolio']").on("click",function(){
+        $("#nearestID").trigger( "click" );
+    });
+
+})
