@@ -47,15 +47,15 @@
                     <ul class="languages-wrap nav navbar-nav">
                         <li><a href="tel:+375297040018">+375297040018</a></li>
                         <li><a href="tel:+375298632150">+375298632150</a></li>
-                        <li><a href="mail:info@mienskbiketour.by">info@mienskbiketour.by</a></li>
-                        <li>
-                            <a href="" class="bike-icon"><i class="mdi mdi-facebook"></i></a></li>
-                        <li>
-                            <a href="https://www.facebook.com/mienski.vielaspacyr" class="bike-icon"><i
+                        <li class="header-mail"><a href="mail:info@mienskbiketour.by">info@mienskbiketour.by</a></li>
+                        <li class="facebook social">
+                            <a href="https://www.facebook.com/mienski.vielaspacyr" target="_blank" class="bike-icon"><i class="mdi mdi-facebook"></i></a></li>
+                        <li class="vk social">
+                            <a href="https://vk.com/mienski.vielaspacyr" class="bike-icon"><i
                                     class="mdi mdi-vk"></i></a>
                         </li>
-                        <li>
-                            <a href="https://www.tripadvisor.co.uk/Attraction_Review-g294448-d6781549-Reviews-Miensk_Bike_Tour-Minsk.html"
+                        <li class="tripadviser social">
+                            <a target="_blank" href="https://www.tripadvisor.co.uk/Attraction_Review-g294448-d6781549-Reviews-Miensk_Bike_Tour-Minsk.html"
                                class="bike-icon trip-advisor">
                                 <svg version="1.1" id="trip-adviser-header" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="98.566px" height="98.566px" viewBox="0 0 98.566 98.566" style="enable-background:new 0 0 98.566 98.566;"
@@ -128,10 +128,10 @@
                             </a>
                         </li>
                         <li><a href="index.html">
-                            BEL
+                            БЕЛ
                         </a></li>
                         <li><a href="index-ru.html">
-                            RUS
+                            РУС
                         </a></li>
                         <li><a href="index-en.html">
                             ENG
@@ -153,11 +153,10 @@
                             <li class="active"><a href="#bike-story">На старт <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="active"><a href="#bike-portfolio">Блiжэйшыя</a></li>
-                            <li><a href="#conditons">Умовы</a></li>
+                            <!--<li><a href="#conditons">Умовы</a></li>-->
                             <li class="dropdown-wrap"><a href="#bike-portfolio">Экскурсіі</a>
                             </li>
-                            <li><a href="">Замовіць</a></li>
-                            <li><a href="">Умовы</a></li>
+                            <li><a href="#book-a-tour" id="book-menu">Замовіць</a></li>
                             <li><a href="#bike-ourTeam">Пра нас</a></li>
                             <li><a href="#bike-latestBlog">Навiны</a></li>
                             <ul class="languages-wrap nav navbar-nav mobile-lang-socials">
@@ -244,7 +243,7 @@
                                     </a>
                                 </li>
                                 <li><a href="index.html">
-                                    BEL
+                                    БЕЛ
                                 </a></li>
                                 <li><a href="index-ru.html">
                                     RU
@@ -387,7 +386,7 @@
         </h2>
     </div>
     <div class="button-group filters-button-group">
-        <button class="button is-checked" data-filter=".nearest">Блiжэйшыя</button>
+        <button class="button is-checked" id="nearestID" data-filter=".nearest">Блiжэйшыя</button>
         <button class="button" data-filter="*">гарадскія</button>
         <button class="button" data-filter=".country">ЗАГАРАДНЫЯ</button>
         <button class="button" data-filter=".exclusive">ЭКСКЛЮЗІЎ</button>
@@ -613,6 +612,34 @@
 
 </section><!--/#bike-portfolio-->
 
+<section id="book-a-tour">
+    <div class="container">
+        <div class="panel-group" id="accordion-book" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-book-form  panel-default">
+                <div class="panel-heading panel-heading-book-form show-more-btn text-center" role="tab">
+                    <h4 class="panel-title text-center">
+                        <a class="collapsed text-center" role="button" data-toggle="collapse" data-parent="#accordion"
+                           href="#bookTour" aria-expanded="false" aria-controls="collapseThree">
+                            Замовiць экскурсію
+                        </a>
+
+                    </h4>
+                    </a>
+                </div>
+                <div id="bookTour" class="panel-collapse collapse" role="tabpanel"
+                     aria-labelledby="headingOne">
+                    <div class="panel-body">
+                        <iframe class="booktour"
+                                src="https://docs.google.com/forms/d/e/1FAIpQLSeB2SbRPlDA6s30zJdpU2aCP1hkWuYKJhUuF-aO6-WR_a2w4Q/viewform?embedded=true"
+                                width="100%" height="1400" frameborder="0" marginheight="0" marginwidth="0">Loading...
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
 
 <section class="conditions" id="conditons">
     <div class="container">
@@ -1168,35 +1195,7 @@
 </section>
 
 
-<section id="book-a-tour">
-    <div class="container">
-        <div class="panel-group" id="accordion-book" role="tablist" aria-multiselectable="true">
-            <div class="panel panel-book-form  panel-default">
-                <div class="panel-heading panel-heading-book-form" role="tab">
-                    <h4 class="panel-title">
-                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                           href="#bookTour" aria-expanded="false" aria-controls="collapseThree">
-                            <i class="mdi mdi-chevron-up bike-icon arrow"></i>
-                            Замовiць экскурсіі:
-                        </a>
 
-                    </h4>
-                    </a>
-                </div>
-                <div id="bookTour" class="panel-collapse collapse" role="tabpanel"
-                     aria-labelledby="headingOne">
-                    <div class="panel-body">
-                        <iframe class="booktour"
-                                src="https://docs.google.com/forms/d/e/1FAIpQLSeB2SbRPlDA6s30zJdpU2aCP1hkWuYKJhUuF-aO6-WR_a2w4Q/viewform?embedded=true"
-                                width="100%" height="1400" frameborder="0" marginheight="0" marginwidth="0">Loading...
-                        </iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-</section>
 
 <!-- Our Team
 ================================================== -->
@@ -1355,40 +1354,40 @@
                             нашыя кліенты
                         </h2>
                         <div class="about-wrap-flex">
-                            <img src="/img/clients/logo-azs.png" alt="A100">
-                            <img src="/img/clients/softeq.png" alt="SOFTEQ">
-                            <img src="/img/clients/epam.png" alt="EPAM">
-                            <img src="/img/clients/belrail.png" alt="БЕЛ">
-                            <img src="/img/clients/french-amb.png" alt="Французское посольствоая амбасада">
-                            <img src="/img/clients/samsolutions.jpeg" alt="samsolutions">
-                            <img src="/img/clients/unistar.png" alt="unistar">
-                            <img src="/img/clients/bank.jpeg" alt="БАНК">
-                            <img src="/img/clients/check_point.gif" alt="CHECKPOINT">
+                            <img src="img/clients/logo-azs.png" alt="A100">
+                            <img src="img/clients/softeq.png" alt="SOFTEQ">
+                            <img src="img/clients/epam.png" alt="EPAM">
+                            <img src="img/clients/belrail.png" alt="БЕЛ">
+                            <img src="img/clients/french-amb.png" alt="Французское посольствоая амбасада">
+                            <img src="img/clients/samsolutions.jpeg" alt="samsolutions">
+                            <img src="img/clients/unistar.png" alt="unistar">
+                            <img src="img/clients/bank.jpeg" alt="БАНК">
+                            <img src="img/clients/check_point.gif" alt="CHECKPOINT">
 
                         </div>
                         <h2 class="bike-sectionHeading our-customers-title">
                             нашыя сябры
                         </h2>
                         <div class="about-wrap-flex">
-                            <img src="/img/friends/fest.jpeg" alt="FEST">
-                            <img src="/img/friends/green.jpg" alt="green">
-                            <img src="/img/friends/budzma.png" alt="EPAM">
+                            <img src="img/friends/fest.jpg" alt="FEST">
+                            <img src="img/friends/green.jpg" alt="green">
+                            <img src="img/friends/budzma.png" alt="EPAM">
                         </div>
                         <h2 class="bike-sectionHeading our-customers-title">
                             нашыя партнеры
                         </h2>
                         <div class="about-wrap-flex">
                             <a href="http://prostoprokat.by/">
-                                <img src="/img/partners/prostoprokat.png" alt="prostoprokat">
+                                <img src="img/partners/prostoprokat.png" alt="prostoprokat">
                             </a>
                             <a href="http://velodisco.by/">
-                                <img src="/img/partners/velodisco.jpg" alt="velodisco">
+                                <img src="img/partners/velodisco.jpg" alt="velodisco">
                             </a>
                             <a href="http://tvoirovar.by/">
-                                <img src="/img/partners/tvoirovar.png" alt="A100">
+                                <img src="img/partners/tvoirovar.png" alt="A100">
                             </a>
                             <a href="http://wildbike.by/">
-                                <img src="/img/partners/wildbike.png" alt="wildbike">
+                                <img src="img/partners/wildbike.png" alt="wildbike">
                             </a>
 
                         </div>
@@ -1472,7 +1471,7 @@
             </div>
         </div>
         <div class="col-md-12 text-center ">
-            <a class="show-more-btn" href="/page4-bel.html">Узнай больш</a>
+            <a class="show-more-btn" href="/page4-bel.html">"БОЛЕЙ НАВІНАЎ</a>
         </div>
 
     </div>
@@ -1509,8 +1508,11 @@
                         </div>
                         <div class="col-md-4">
                             <ul>
+                                <li><a href="index.html">
+                                   БЕЛ
+                                </a></li>
                                 <li><a href="index-ru.html">
-                                    RUS
+                                    РУС
                                 </a></li>
                                 <li><a href="index-en.html">
                                     ENG
@@ -1530,10 +1532,16 @@
             <div class="col-md-2 col-xs-12">
                 <div class="bike-followUs">
                     <div class="socialNetwork">
-                        <a href="" class="bike-icon"><i class="mdi mdi-facebook"></i></a>
-                        <a href="https://vk.com/mienski.vielaspacyr" class="bike-icon"><i class="mdi mdi-vk"></i></a>
-                        <a href="https://www.tripadvisor.co.uk/Attraction_Review-g294448-d6781549-Reviews-Miensk_Bike_Tour-Minsk.html" class="bike-icon trip-advisor">
-                            <svg version="1.1" id="trip-adviser-footer" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        <li class="facebook social">
+                            <a href="https://www.facebook.com/mienski.vielaspacyr" target="_blank" class="bike-icon"><i class="mdi mdi-facebook"></i></a></li>
+                        <li class="vk social">
+                            <a href="https://vk.com/mienski.vielaspacyr" class="bike-icon"><i
+                                    class="mdi mdi-vk"></i></a>
+                        </li>
+                        <li class="tripadviser social">
+                            <a target="_blank" href="https://www.tripadvisor.co.uk/Attraction_Review-g294448-d6781549-Reviews-Miensk_Bike_Tour-Minsk.html"
+                               class="bike-icon trip-advisor">
+                                <svg version="1.1" id="trip-adviser-header" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="98.566px" height="98.566px" viewBox="0 0 98.566 98.566" style="enable-background:new 0 0 98.566 98.566;"
 	 xml:space="preserve">
 <g>
@@ -1601,7 +1609,8 @@
 <g>
 </g>
 </svg>
-                        </a>
+                            </a>
+                        </li>
                     </div>
                 </div>
             </div>
@@ -1611,8 +1620,8 @@
             <ul class="nav navbar-nav">
                 <li class="active"><a href="#bike-story">На старт <span class="sr-only">(current)</span></a></li>
                 <li class="active"><a href="#bike-portfolio">Блiжэйшыя</a></li>
-                <li><a href="">Экскурсii</a></li>
-                <li><a href="">Замовіць</a></li>
+                <li><a href="#bike-portfolio">Экскурсii</a></li>
+                <li><a href="page-book-bel.html">Замовіць</a></li>
 
 
                 <li class="footer-logo-wrap">
@@ -1630,7 +1639,7 @@
         <div class="row">
             <div class="col-xs-12">
                 <div class="text-center">
-                    <img src="img/visa.jpg" alt="">
+                    <img src="img/visa.jpg" alt="VISA">
                 </div>
             </div>
         </div>
