@@ -184,7 +184,7 @@ h4 {
     }
     .bottom-data {
       position: absolute;
-      bottom: 5px;
+      bottom: 50px;
       left: 5px;
       text-align: left;
     }
@@ -284,5 +284,35 @@ h4 {
         }
       }
     }
+  }
+}
+.center{
+  .svg-inline--fa{
+    height: 20px;
+    color:rgba(254, 167, 0, 0.9);
+  }
+}
+ul.route li:after{
+  right: 24% !important;
+}
+.infoblock{
+  position: relative;
+  cursor: pointer;
+  h3{
+    text-align: center;
+    font-size: 50px;
+  }
+  h4{
+    visibility: hidden;
+    text-align: center;
+    @media screen and(max-width:1024px){
+      visibility: visible;
+    }
+  }
+  &:hover{
+    h4{
+      visibility: visible;
+    }
+
   }
 }
