@@ -7598,7 +7598,7 @@ h4 {
 
 .full-tour-banner .over .bottom-data {
   position: absolute;
-  bottom: 5px;
+  bottom: 50px;
   left: 5px;
   text-align: left; }
 
@@ -7607,6 +7607,28 @@ h4 {
 
 .container-fluid {
   max-width: 1280px !important; }
+
+.center .svg-inline--fa {
+  height: 20px;
+  color: rgba(254, 167, 0, 0.9); }
+
+ul.route li:after {
+  right: 24% !important; }
+
+.infoblock {
+  position: relative;
+  cursor: pointer; }
+
+.infoblock h3 {
+  text-align: center;
+  font-size: 50px; }
+
+.infoblock h4 {
+  visibility: hidden;
+  text-align: center; }
+
+.infoblock:hover h4 {
+  visibility: visible; }
 
 [data-aos][data-aos][data-aos-duration="50"], body[data-aos-duration="50"] [data-aos] {
   transition-duration: 50ms; }
@@ -9523,3 +9545,7 @@ h4 {
     width: 40px;
     height: 1px;
     border-top: dashed 2px #000000; } }
+
+@media screen and (max-width: 1024px) {
+  .infoblock h4 {
+    visibility: visible; } }

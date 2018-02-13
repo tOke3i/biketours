@@ -108,7 +108,7 @@ jQuery(function($) {
 });
 []
 $(document).ready(function(){
-    $("#book-menu").on("click",function(){
+    $("#book-menu,#book-now").on("click",function(){
     	$("#accordion-book .panel-heading .collapsed").trigger( "click" )
 	});
 
