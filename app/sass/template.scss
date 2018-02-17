@@ -263,7 +263,7 @@ img {
 }
   img {
     margin: auto;
-    top: 30px;
+    top: 40px;
     margin-left: 20px;
     position: absolute;
     max-height: 150px;
@@ -443,7 +443,6 @@ footer .bike-followUs .socialNetwork .bike-icon{
   margin-top: 20px;
 }
 #bike-slider{
-  max-height:450px;
   overflow: hidden;
 }
 #bike-portfolio{
@@ -562,6 +561,7 @@ footer {
   border-radius: 0;
   background: #444444;
   font-size: 14px;
+  margin-bottom:0;
   .navbar-brand {
     color: #ffffff;
     font-weight: 700;
@@ -767,6 +767,7 @@ section {
   border-top: none !important;
 }
 #accordion-book .panel-default > .panel-heading.show-more-btn{
+  color: rgba(254, 167, 0, 0.9) !important;;
   display:  block;
   background: transparent;
   border: 1px solid rgba(254, 167, 0, 0.9) !important;
@@ -1435,30 +1436,13 @@ div {
 .social-net {
   padding: 0 !important;
 }
+.slick-track{
+  .item{
+    padding: 0;
+    position: relative;
 
-.slide-1 {
-  background: url(../img/slide1.jpg);
-  background-position: center center !important;
+  }
 }
-
-.slide-2 {
-  background: url(../img/slide2.jpg);
-}
-
-.slide-3 {
-  background: url(../img/slider/111.jpg);
-}
-
-.slide-4 {
-  background: url(../img/slider/578935_original.jpg);
-  background-position: center center !important;
-}
-
-.slide-5 {
-  background: url(../img/slide3.jpg);
-  background-position: center center !important;
-}
-
 #slider-header .item {
   background-size: cover;
   background-position: center bottom;
@@ -2192,7 +2176,7 @@ div {
 }
 .about-wrap-flex img {
   max-width: 200px;
-  margin: 0 20px;
+  margin: 20px 20px;
 }
 .collapse-about{
   font-size: 80px;
@@ -2207,3 +2191,25 @@ div {
   margin: 0 auto;
   display: block;
  }
+.container.header-wrap{
+  border-bottom: 8px solid #fab200;
+  min-height: 78px;
+ }
+#bike-slider .bike-sectionHeading{
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  left: 40%s
+}
+.slick-slide{
+img{
+   width: 100%;
+  }
+}
+#bike-slider{
+  max-height: 650px !important;
+}
+.slick-slide{
+  max-height: 650px !important;
+  height: auto !important;
+}

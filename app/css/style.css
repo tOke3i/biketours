@@ -5730,7 +5730,7 @@ img.img-full-width {
 
 .logo-wrap img {
   margin: auto;
-  top: 30px;
+  top: 40px;
   margin-left: 20px;
   position: absolute;
   max-height: 150px;
@@ -5911,7 +5911,6 @@ footer .bike-followUs .socialNetwork .bike-icon {
   margin-top: 20px; }
 
 #bike-slider {
-  max-height: 450px;
   overflow: hidden; }
 
 #bike-portfolio {
@@ -6009,7 +6008,8 @@ footer .trip-advisor svg {
   border: none;
   border-radius: 0;
   background: #444444;
-  font-size: 14px; }
+  font-size: 14px;
+  margin-bottom: 0; }
 
 #bike-navbar .navbar-brand {
   color: #ffffff;
@@ -6197,6 +6197,7 @@ section {
   border-top: none !important; }
 
 #accordion-book .panel-default > .panel-heading.show-more-btn {
+  color: rgba(254, 167, 0, 0.9) !important;
   display: block;
   background: transparent;
   border: 1px solid rgba(254, 167, 0, 0.9) !important; }
@@ -6808,23 +6809,9 @@ div.pp_default .pp_social {
 .social-net {
   padding: 0 !important; }
 
-.slide-1 {
-  background: url(../img/slide1.jpg);
-  background-position: center center !important; }
-
-.slide-2 {
-  background: url(../img/slide2.jpg); }
-
-.slide-3 {
-  background: url(../img/slider/111.jpg); }
-
-.slide-4 {
-  background: url(../img/slider/578935_original.jpg);
-  background-position: center center !important; }
-
-.slide-5 {
-  background: url(../img/slide3.jpg);
-  background-position: center center !important; }
+.slick-track .item {
+  padding: 0;
+  position: relative; }
 
 #slider-header .item {
   background-size: cover;
@@ -7148,7 +7135,7 @@ div.pp_default .pp_social {
 
 .about-wrap-flex img {
   max-width: 200px;
-  margin: 0 20px; }
+  margin: 20px 20px; }
 
 .collapse-about {
   font-size: 80px; }
@@ -7160,6 +7147,26 @@ div.pp_default .pp_social {
   max-width: 400px;
   margin: 0 auto;
   display: block; }
+
+.container.header-wrap {
+  border-bottom: 8px solid #fab200;
+  min-height: 78px; }
+
+#bike-slider .bike-sectionHeading {
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  left: 40%s; }
+
+.slick-slide img {
+  width: 100%; }
+
+#bike-slider {
+  max-height: 650px !important; }
+
+.slick-slide {
+  max-height: 650px !important;
+  height: auto !important; }
 
 .unslider {
   overflow: auto;
@@ -7653,7 +7660,7 @@ ul.route li:after {
 
 h4.bold {
   font-size: 1.4rem;
-  text-transform: center; }
+  text-align: center; }
 
 .full-tour-banner .over .bottom-data {
   text-align: center; }
