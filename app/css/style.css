@@ -5730,7 +5730,7 @@ img.img-full-width {
 
 .logo-wrap img {
   margin: auto;
-  top: 40px;
+  top: 41px;
   margin-left: 20px;
   position: absolute;
   max-height: 150px;
@@ -7156,7 +7156,7 @@ div.pp_default .pp_social {
   position: absolute;
   top: 15%;
   left: 15%;
-  left: 40%s; }
+  left: 40%; }
 
 .slick-slide img {
   width: 100%; }
