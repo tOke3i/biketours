@@ -5736,6 +5736,9 @@ img.img-full-width {
   max-height: 150px;
   z-index: 9999; }
 
+.li.center {
+  font-size: 1rem; }
+
 #bike-header {
   position: relative;
   font-family: "Roboto", sans-serif; }
@@ -7612,23 +7615,51 @@ h4 {
   height: 20px;
   color: rgba(254, 167, 0, 0.9); }
 
+ul.route li {
+  font-size: 12px; }
+
 ul.route li:after {
   right: 24% !important; }
 
 .infoblock {
   position: relative;
-  cursor: pointer; }
+  cursor: pointer;
+  margin: 40px 0; }
 
 .infoblock h3 {
   text-align: center;
   font-size: 50px; }
 
-.infoblock h4 {
-  visibility: hidden;
+.infoblock:hover .info-lock__hint {
+  display: block; }
+
+.info-lock__hint {
+  color: #333333;
+  background: rgba(254, 167, 0, 0.9);
+  padding: 8px 15px;
+  border-radius: 3px;
+  position: absolute;
+  z-index: 5;
+  width: 290px;
+  top: -100%;
+  right: -30%;
+  display: none;
+  border-radius: 5px;
+  box-shadow: 0 0 10px orangered;
+  display: none; }
+
+.tour-text-col-first {
+  border-right: 2px solid rgba(254, 167, 0, 0.9); }
+
+h4.bold {
+  font-size: 1.4rem;
+  text-transform: center; }
+
+.full-tour-banner .over .bottom-data {
   text-align: center; }
 
-.infoblock:hover h4 {
-  visibility: visible; }
+.route {
+  margin: 0 auto !important; }
 
 [data-aos][data-aos][data-aos-duration="50"], body[data-aos-duration="50"] [data-aos] {
   transition-duration: 50ms; }
@@ -9545,7 +9576,3 @@ ul.route li:after {
     width: 40px;
     height: 1px;
     border-top: dashed 2px #000000; } }
-
-@media screen and (max-width: 1024px) {
-  .infoblock h4 {
-    visibility: visible; } }

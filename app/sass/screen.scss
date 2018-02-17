@@ -292,27 +292,58 @@ h4 {
     color:rgba(254, 167, 0, 0.9);
   }
 }
+ul.route li{
+  font-size: 12px;
+ }
 ul.route li:after{
   right: 24% !important;
+
 }
 .infoblock{
   position: relative;
   cursor: pointer;
+  margin: 40px 0;
   h3{
     text-align: center;
     font-size: 50px;
   }
-  h4{
-    visibility: hidden;
-    text-align: center;
-    @media screen and(max-width:1024px){
-      visibility: visible;
+  &:hover{
+    .info-lock__hint{
+      display: block;
     }
   }
-  &:hover{
-    h4{
-      visibility: visible;
-    }
+ }
+.info-lock__hint{
+  color: #333;
+  background: rgba(254, 167, 0, 0.9);
+  padding: 8px 15px;
+  border-radius: 3px;
+  position: absolute;
+  z-index: 5;
+  width: 290px;
+  top: -100%;
+  right: -30%;
+  display: none;
+  border-radius: 5px;
+  box-shadow: 0 0 10px orangered;
+  display: none;
+}
+.tour-text-col-first{
+  border-right: 2px solid rgba(254, 167, 0, 0.9);
+}
 
+h4.bold{
+  font-size: 1.4rem;
+  text-transform: center;
+}
+.full-tour-banner .over .bottom-data{
+  text-align: center;
+}
+.route{
+  margin: 0 auto !important;
+  p{
+    &:first-line{
+//add first line intend
+    }
   }
 }
