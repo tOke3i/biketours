@@ -433,6 +433,7 @@ footer .bike-followUs .socialNetwork .bike-icon{
   padding: 3px!important;
   align-items: center;
   justify-content: center;
+  font-size: 18px;
 }
 .facebook.social:hover,.vk.social:hover,.trip-adviser:hover{
   background: #bd7f08;
@@ -617,6 +618,9 @@ footer {
   }
 }
 
+.navbar-nav > li > a{
+  line-height: 20px;
+}
 .bike-fixed-nav #bike-navbar {
   position: fixed;
   top: 0;

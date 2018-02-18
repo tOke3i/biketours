@@ -5900,7 +5900,8 @@ footer .bike-followUs .socialNetwork .bike-icon {
   align-items: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
-  justify-content: center; }
+  justify-content: center;
+  font-size: 18px; }
 
 .facebook.social:hover, .vk.social:hover, .trip-adviser:hover {
   background: #bd7f08;
@@ -6061,6 +6062,9 @@ footer .trip-advisor svg {
 
 #bike-navbar .navbar-toggle .icon-bar {
   background: #ffffff; }
+
+.navbar-nav > li > a {
+  line-height: 20px; }
 
 .bike-fixed-nav #bike-navbar {
   position: fixed;
