@@ -111,7 +111,9 @@ ul.route {
   margin: 0;
   padding: 0;
   list-style: none;
-  display: table;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   li {
     display: table-cell;
     max-width: 250px;
@@ -345,5 +347,18 @@ h4.bold{
     &:first-line{
 //add first line intend
     }
+  }
+}
+
+.tour-page-wrapper{
+  #bike-slider{
+    position: absolute;
+    height: 650px;
+  }
+  .big{
+    @media screen and (max-width:1000px){
+      font-size: 3rem !important;
+    }
+
   }
 }
