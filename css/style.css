@@ -5900,7 +5900,8 @@ footer .bike-followUs .socialNetwork .bike-icon {
   align-items: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
-  justify-content: center; }
+  justify-content: center;
+  font-size: 18px; }
 
 .facebook.social:hover, .vk.social:hover, .trip-adviser:hover {
   background: #bd7f08;
@@ -6062,6 +6063,9 @@ footer .trip-advisor svg {
 #bike-navbar .navbar-toggle .icon-bar {
   background: #ffffff; }
 
+.navbar-nav > li > a {
+  line-height: 20px; }
+
 .bike-fixed-nav #bike-navbar {
   position: fixed;
   top: 0;
@@ -6103,13 +6107,13 @@ section {
   padding: 70px 0 0; }
 
 #bike-slider .bike-sectionHeading {
-  font-size: 50px;
+  font-size: 5rem;
   color: #ffffff;
   background: rgba(16, 16, 16, 0.3);
   padding: 27px 0; }
 
 #bike-slider .bike-sectionHeading .bike-subHeading {
-  font-size: 55px; }
+  font-size: 4rem; }
 
 #bike-slider .bike-sectionHeading:after {
   background: #ffffff; }
@@ -7154,9 +7158,10 @@ div.pp_default .pp_social {
 
 #bike-slider .bike-sectionHeading {
   position: absolute;
-  top: 15%;
-  left: 15%;
-  left: 40%; }
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-top: 15%; }
 
 .slick-slide img {
   width: 100%; }
@@ -7539,7 +7544,15 @@ ul.route {
   margin: 0;
   padding: 0;
   list-style: none;
-  display: table; }
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
 
 ul.route li {
   display: table-cell;
@@ -7667,6 +7680,10 @@ h4.bold {
 
 .route {
   margin: 0 auto !important; }
+
+.tour-page-wrapper #bike-slider {
+  position: absolute;
+  height: 650px; }
 
 [data-aos][data-aos][data-aos-duration="50"], body[data-aos-duration="50"] [data-aos] {
   transition-duration: 50ms; }
@@ -9331,6 +9348,10 @@ h4.bold {
   .about-hint {
     right: 0; } }
 
+@media screen and (max-width: 1024px) {
+  #bike-slider .bike-sectionHeading {
+    font-size: 3rem; } }
+
 @media (max-device-width: 480px) and (orientation: landscape) {
   .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
     max-height: 200px; } }
@@ -9346,7 +9367,7 @@ h4.bold {
   #bike-slider .carousel-indicators {
     margin-top: 30px; }
   #bike-slider .bike-sectionHeading {
-    font-size: 60px; }
+    font-size: 3rem; }
   #bike-slider .bike-sectionHeading .bike-subHeading {
     font-size: 35px; }
   #bike-uniqueDesign .bike-devices .mobile {
@@ -9583,3 +9604,7 @@ h4.bold {
     width: 40px;
     height: 1px;
     border-top: dashed 2px #000000; } }
+
+@media screen and (max-width: 1000px) {
+  .tour-page-wrapper .big {
+    font-size: 3rem !important; } }
