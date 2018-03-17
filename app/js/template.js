@@ -18,7 +18,7 @@ jQuery(function($) {
 
 	/* =============== MAKE MAIN MENU STICKED ON TOP WHEN SCROLL =============== */
 	$(window).scroll(function () {
-		if ($(this).scrollTop() == $('#bike-header').height() || $(this).scrollTop() > $('#bike-header').height()) {
+		if ($(this).scrollTop() == $('#bike-header').height() || $(this).scrollTop() > 100) {
 			$('body').addClass("bike-fixed-nav");
 			$('body').css('padding-top', $('#bike-navbar').height() + 'px');
 		} else {
@@ -56,7 +56,7 @@ jQuery(function($) {
 	/* =============== SHOW / HIDE GO TO TOP =============== */
 	/* Check to see if the window is top if not then display go top button */
 	$(window).scroll(function(){
-		if ($(this).scrollTop() > 200) {
+		if ($(this).scrollTop() > 100) {
 			$('#bike-scrollToTop').fadeIn();
 		} else {
 			$('#bike-scrollToTop').fadeOut();

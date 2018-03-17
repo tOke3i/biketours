@@ -5724,7 +5724,8 @@ img.img-full-width {
   padding: 7px; }
 
 .logo-wrap {
-  position: absolute;
+  position: fixed;
+  z-index: 999;
   width: 10%;
   text-align: center; }
 
@@ -7685,6 +7686,12 @@ h4.bold {
   position: absolute;
   height: 650px; }
 
+.tour-title-over-slider, .full-tour-banner {
+  padding: 15px !important; }
+
+ul li {
+  padding-left: 17px; }
+
 [data-aos][data-aos][data-aos-duration="50"], body[data-aos-duration="50"] [data-aos] {
   transition-duration: 50ms; }
 
@@ -9559,8 +9566,7 @@ h4.bold {
   .hidden-phone {
     display: none !important; }
   .full-tour-banner .over {
-    position: static;
-    overflow: auto;
+    padding: 15px;
     display: block;
     padding-bottom: 0;
     height: auto;
@@ -9573,7 +9579,7 @@ h4.bold {
     position: static;
     background-color: transparent !important; }
   .full-tour-banner .over .bg-dark h1, .full-tour-banner .over .bg-dark h2, .full-tour-banner .over .bg-dark h3, .full-tour-banner .over .bg-dark h4 {
-    color: #000000; }
+    color: #ffffff; }
   .full-tour-banner .over .inner {
     position: static;
     margin: 0;
@@ -9582,8 +9588,8 @@ h4.bold {
     -ms-transform: none;
     transform: none; }
   .full-tour-banner .over .cta.light, .full-tour-banner .over .btn.light {
-    color: #000000;
-    border-color: #000000; }
+    color: #ffffff;
+    border-color: #ffffff; }
   .full-tour-banner .over .bottom-data {
     position: static; }
   .full-tour-banner .over .bottom-data ul {

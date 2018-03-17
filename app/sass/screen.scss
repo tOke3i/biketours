@@ -234,8 +234,7 @@ h4 {
     display: none !important;
   }
   .full-tour-banner .over {
-    position: static;
-    overflow: auto;
+    padding: 15px;
     display: block;
     padding-bottom: 0;
     height: auto;
@@ -249,7 +248,7 @@ h4 {
       position: static;
       background-color: transparent !important;
       h1, h2, h3, h4 {
-        color: #000;
+        color: #fff;
       }
     }
     .inner {
@@ -259,8 +258,8 @@ h4 {
       transform: none;
     }
     .cta.light, .btn.light {
-      color: #000;
-      border-color: #000;
+      color: #fff;
+      border-color: #fff;
     }
     .bottom-data {
       position: static;
@@ -361,4 +360,11 @@ h4.bold{
     }
 
   }
+}
+
+.tour-title-over-slider,.full-tour-banner {
+  padding: 15px !important;
+}
+ul li {
+  padding-left: 17px;
 }
