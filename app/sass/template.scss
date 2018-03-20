@@ -775,13 +775,15 @@ section {
   border-top: none !important;
 }
 #accordion-book .panel-default > .panel-heading.show-more-btn{
-  color: rgba(254, 167, 0, 0.9) !important;;
+  color: #fff;
   display:  block;
   background: transparent;
   border: 1px solid rgba(254, 167, 0, 0.9) !important;
+  background: rgba(254, 167, 0, 0.9);
 }
 #accordion-book .panel-default > .panel-heading.show-more-btn:hover{
-  background: rgba(254, 167, 0, 0.9);
+  background: rgba(204, 133, 0, 0.9);
+  color: #fff;
 
 }
 #accordion-book .panel-default > .panel-heading{
