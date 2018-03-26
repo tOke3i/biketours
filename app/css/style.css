@@ -6592,7 +6592,7 @@ section {
   margin: 20px 0; }
 
 strong {
-  font-weight: 500 !important; }
+  font-weight: 600 !important; }
 
 footer {
   color: #ffffff;
@@ -7556,7 +7556,10 @@ ul.route {
   flex-direction: row;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
 
 ul.route li {
   display: table-cell;
@@ -7684,6 +7687,9 @@ h4.bold {
 
 .route {
   margin: 0 auto !important; }
+
+.tour-page-wrapper ul {
+  margin-left: 20px; }
 
 .tour-page-wrapper #bike-slider {
   position: absolute;

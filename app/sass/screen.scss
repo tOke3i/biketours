@@ -114,6 +114,7 @@ ul.route {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
   li {
     display: table-cell;
     max-width: 250px;
@@ -360,6 +361,9 @@ h4.bold{
 }
 
 .tour-page-wrapper{
+  ul{
+    margin-left: 20px;
+  }
   #bike-slider{
     position: absolute;
     height: 650px;
