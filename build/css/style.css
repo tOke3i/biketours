@@ -6592,7 +6592,7 @@ section {
   margin: 20px 0; }
 
 strong {
-  font-weight: 500 !important; }
+  font-weight: 600 !important; }
 
 footer {
   color: #ffffff;
@@ -6971,7 +6971,8 @@ div.pp_default .pp_social {
   float: right; }
 
 .slick-slide img {
-  display: block; }
+  display: block;
+  min-height: 200px; }
 
 .slick-slide.slick-loading img {
   display: none; }
@@ -7447,7 +7448,7 @@ div.pp_default .pp_social {
 
 @ceaarset "UTF-8";
 .bg-dark {
-  background-color: rgba(52, 52, 52, 0.3) !important; }
+  background-color: transparent; }
 
 .bg-dark h1, .bg-dark h2, .bg-dark h3, .bg-dark h4 {
   color: #ffffff; }
@@ -7555,7 +7556,10 @@ ul.route {
   flex-direction: row;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
 
 ul.route li {
   display: table-cell;
@@ -7683,6 +7687,9 @@ h4.bold {
 
 .route {
   margin: 0 auto !important; }
+
+.tour-page-wrapper ul {
+  margin-left: 20px; }
 
 .tour-page-wrapper #bike-slider {
   position: absolute;
@@ -9391,7 +9398,11 @@ ul li {
     display: inline-block;
     max-width: 380px;
     margin-bottom: 30px;
-    text-align: left; } }
+    text-align: left; }
+  .full-tour-banner {
+    margin-bottom: 60px; }
+  .full-tour-banner .over .inner {
+    top: 60% !important; } }
 
 @media (max-width: 1200px) {
   #bike-whatWeDo .panel-body {
@@ -9444,7 +9455,7 @@ ul li {
   #bike-latestBlog article .date .text {
     font-size: 11px; }
   .full-tour-banner .over {
-    padding-bottom: 60%; }
+    padding-bottom: 40%; }
   .full-tour-banner .over img {
     min-width: 100%;
     width: auto;
@@ -9553,16 +9564,18 @@ ul li {
     width: 100%; } }
 
 @media (max-width: 1036px) {
+  .full-tour-banner .over .inner {
+    top: 30%; }
   ul.route li {
     max-width: none;
-    padding-right: 30px; }
+    padding-right: 15px; }
   ul.route li:after {
     top: 30px;
     width: 20px; }
   ul.route li h2 {
-    font-size: 1.4em; }
+    font-size: 1.2em; }
   ul.route li h4 {
-    font-size: 1.1em; } }
+    font-size: 1em; } }
 
 @media (max-width: 769px) {
   .hidden-phone {
@@ -9616,3 +9629,7 @@ ul li {
 @media screen and (max-width: 1000px) {
   .tour-page-wrapper .big {
     font-size: 3rem !important; } }
+
+@media screen and (max-width: 640px) {
+  .tour-page-wrapper .big {
+    font-size: 2rem !important; } }
