@@ -384,3 +384,9 @@ h4.bold{
 ul li {
   padding-left: 17px;
 }
+.infoblock{
+  &:nth-last-child(2){
+    h3{
+    color: rgba(254, 167, 0, 0.9);
+    }  }
+}
