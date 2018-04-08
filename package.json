@@ -29,7 +29,7 @@
     "start": "gulp serve"
   },
   "engines": {
-    "node": "^6.9.4"
+    "node": "^8.10.0"
   },
   "dependencies": {
     "all": "^0.0.0"
