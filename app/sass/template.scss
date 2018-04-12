@@ -774,7 +774,8 @@ section {
 #accordion-book .panel-body{
   border-top: none !important;
 }
-#accordion-book .panel-default > .panel-heading.show-more-btn{
+#accordion-book .panel-default > .panel-heading.show-more-btn,
+#accordion-team .panel-default > .panel-heading .show-more-btn {
   color: #fff;
   display:  block;
   background: transparent;
